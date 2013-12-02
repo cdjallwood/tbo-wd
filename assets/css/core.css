@@ -721,15 +721,28 @@ tfoot th:first-child {
   .blog-entry a {
     font-family: 'Archer SSm A', 'Archer SSm B';
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
     font-size: 0.875rem;
     color: #ffa94d; }
+  .blog-entry + .blog-entry {
+    margin-top: 21px; }
 
+@media screen and (min-width: 680px) {
+  .blog-entry + .blog-entry {
+    margin-top: 0; } }
 .speaker-list {
   margin-top: 2%; }
 
 .sign-up-cta {
   background: url("../img/sign-up-bg-repeat.jpg") repeat; }
+  .sign-up-cta .h1 {
+    color: #162d39; }
+    .sign-up-cta .h1 span {
+      display: block; }
+  .sign-up-cta p {
+    font-family: 'Archer SSm A', 'Archer SSm B';
+    font-weight: 500;
+    font-style: normal; }
 
 @media screen and (max-width: 400px) {
   .conf-cta span {
@@ -1331,7 +1344,7 @@ tfoot th:first-child {
     .m-info-block footer p {
       font-family: 'Archer SSm A', 'Archer SSm B';
       font-weight: 500;
-      font-style: italic;
+      font-style: normal;
       display: block; }
     .m-info-block footer a {
       text-decoration: underline; }
@@ -1339,7 +1352,8 @@ tfoot th:first-child {
 @media screen and (max-width: 680px) {
   .m-info-block.venue-block {
     position: relative;
-    height: 450px; }
+    height: 450px;
+    overflow: hidden; }
     .m-info-block.venue-block img {
       height: 100%;
       width: auto;
@@ -1382,7 +1396,7 @@ tfoot th:first-child {
   .m-hero p {
     font-family: 'Archer SSm A', 'Archer SSm B';
     font-weight: 500;
-    font-style: italic;
+    font-style: normal;
     font-size: 1.25rem;
     line-height: 1.25em;
     color: #fff; }

@@ -43,9 +43,14 @@ $header-row: 32px;
 @mixin subheading{
 	font-family: 'Archer SSm A', 'Archer SSm B'; 
 	font-weight: 500; 
-	font-style: italic;
+	font-style: normal;
 }
 
+@mixin italic-subheading{
+	font-family: 'Archer SSm A', 'Archer SSm B';
+	font-weight: 500;
+	font-style: normal;
+}
 
 //============================
 // URLS

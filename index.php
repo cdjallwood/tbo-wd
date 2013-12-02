@@ -201,7 +201,7 @@ is the..</p>
 
 		<article class="m-info-block sign-up-cta centered extended-block">
 			<div class="container">
-				<h2>The Business of <span>Web Design</span></h2>
+				<h2 class="h1">The Business of <span>Web Design</span></h2>
 				<p>Help & advice from the front line of running 
 a web design business</p>
 				<p><strong>18th July 2013 - Atrium, Cardiff</strong></p>

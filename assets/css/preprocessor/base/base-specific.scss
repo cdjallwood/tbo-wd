@@ -86,6 +86,18 @@
 		font-size: 0.875rem;
 		color: $orange;
 	}
+
+	+ .blog-entry{
+		margin-top: 21px;
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.blog-entry{
+		+ .blog-entry{
+			margin-top: 0;
+		}
+	}
 }
 
 .speaker-list{
@@ -94,6 +106,18 @@
 
 .sign-up-cta{
 	background: url("#{$imgUrl}/sign-up-bg-repeat.jpg") repeat;
+
+	.h1{
+		color: $dark-blue;
+
+		span{
+			display: block;
+		}
+	}
+
+	p{
+		@include subheading;
+	}
 }
 
 @media screen and (max-width: $palm){
