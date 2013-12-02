@@ -1,0 +1,43 @@
+/* =============================================================================
+   Hero Module - Hero block
+   ========================================================================== */
+
+.m-hero{
+	text-align: center;
+	position: relative;
+
+	> div{
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	p{
+		@include subheading;
+		font-size: 1.25rem;
+		line-height: 1.25em;
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: $tablet){
+	
+	.m-hero{
+		overflow: hidden;
+		img{
+			height: 450px;
+			width: auto;
+			max-width: none;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.m-hero{
+		> div{
+			top: 120px;
+		}
+	}
+}

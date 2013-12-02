@@ -1,0 +1,305 @@
+/* =============================================================================
+   Layout CSS - Grids widths, column gutters & wrappers
+   ========================================================================== */
+
+
+/* For generic column styling */
+@mixin column-module {
+	display: inline;
+	float: left;
+	margin: 0 $base-gutter;
+}
+
+// Palm Grid
+@media screen and (max-width: $palm){
+
+	/* =============================================================================
+	   Column gutters & extended gutters
+	   ========================================================================== */
+	@for $i from 1 through $columns {
+		.p-grid-#{$i} {
+			@include column-module;
+		}
+	}
+
+	.p-gutter-expand {
+		margin-left: $base-gutter*3;
+		margin-right: $base-gutter*3;
+	}
+	.p-gutter-expand-right {
+		margin-right: $base-gutter*3;
+	}
+	.p-gutter-expand-left {
+		margin-left: $base-gutter*3;
+	}
+	.p-gutter-collapse {
+		margin: 0 !important;
+	}
+
+	/* =============================================================================
+	   Grid Widths
+	   ========================================================================== */
+
+	/*
+	 * When '-alt' is used it's for when a column has expanded gutters
+	 */
+
+	.p-grid-1 {
+		@include column(4.5);
+	}
+	.p-grid-third{
+		@include column-module;
+		@include column(6);
+	}
+	.p-grid-2 {
+		@include column(9);
+	}
+	.p-grid-3 {
+		@include column(13.5);
+	}
+	.p-grid-4 {
+		@include column(18);
+	}
+
+	.p-clear-1{
+		margin-left: 06.8585944% !important;
+	}
+
+}
+
+// Tablet Grid
+@media screen and (min-width: $palm) and (max-width: $tablet){
+
+	/* =============================================================================
+	   Column gutters & extended gutters
+	   ========================================================================== */
+	@for $i from 1 through $columns {
+		.t-grid-#{$i} {
+			@include column-module;
+		}
+	}
+
+	.t-gutter-expand {
+		margin-left: $base-gutter*3;
+		margin-right: $base-gutter*3;
+	}
+	.t-gutter-expand-right {
+		margin-right: $base-gutter*3;
+	}
+	.t-gutter-expand-left {
+		margin-left: $base-gutter*3;
+	}
+	.t-gutter-collapse {
+		margin: 0 !important;
+	}
+
+	/* =============================================================================
+	   Grid Widths
+	   ========================================================================== */
+
+	/*
+	 * When '-alt' is used it's for when a column has expanded gutters
+	 */
+
+	.t-grid-1 {
+		@include column(1);
+	}
+	.t-grid-2 {
+		@include column(2);
+	}
+	.t-grid-3 {
+		@include column(3);
+	}
+	.t-grid-4 {
+		@include column(4);
+	}
+	.t-grid-5 {
+		@include column(5);
+	}
+	.t-grid-6 {
+		@include column(6);
+	}
+	.t-grid-7 {
+		@include column(7);
+	}
+	.t-grid-8 {
+		@include column(8);
+	}
+	.t-grid-9 {
+		@include column(9);
+	}
+	.t-grid-10 {
+		@include column(10);
+	}
+	.t-grid-11 {
+		@include column(11);
+	}
+	.t-grid-12 {
+		@include column(12);
+	}
+	.t-grid-13 {
+		@include column(13);
+	}
+	.t-grid-14 {
+		@include column(14);
+	}
+	.t-grid-15 {
+		@include column(15);
+	}
+
+	.t-clear-1{
+		margin-left: 06.8585944% !important;
+	}
+
+}
+
+// Desktop Grid
+@media screen and (min-width: $tablet){
+	/* =============================================================================
+	   Column gutters & extended gutters
+	   ========================================================================== */
+	@for $i from 1 through $columns {
+		.l-grid-#{$i} {
+			@include column-module;
+		}
+	}
+
+	.l-gutter-expand {
+		margin-left: $base-gutter*3;
+		margin-right: $base-gutter*3;
+	}
+	.l-gutter-expand-right {
+		margin-right: $base-gutter*3;
+	}
+	.l-gutter-expand-left {
+		margin-left: $base-gutter*3;
+	}
+	.l-gutter-collapse {
+		margin: 0 !important;
+	}
+
+	/* =============================================================================
+	   Grid Widths
+	   ========================================================================== */
+
+	/*
+	 * When '-alt' is used it's for when a column has expanded gutters
+	 */
+
+	.l-grid-1 {
+		@include column(1);
+	}
+	.l-grid-2 {
+		@include column(2);
+	}
+	.l-grid-3 {
+		@include column(3);
+	}
+	.l-grid-4 {
+		@include column(4);
+	}
+	.l-grid-5 {
+		@include column(5);
+	}
+	.l-grid-6 {
+		@include column(6);
+	}
+	.l-grid-7 {
+		@include column(7);
+	}
+	.l-grid-8 {
+		@include column(8);
+	}
+	.l-grid-9 {
+		@include column(9);
+	}
+	.l-grid-10 {
+		@include column(10);
+	}
+	.l-grid-11 {
+		@include column(11);
+	}
+	.l-grid-12 {
+		@include column(12);
+	}
+	.l-grid-13 {
+		@include column(13);
+	}
+	.l-grid-14 {
+		@include column(14);
+	}
+	.l-grid-15 {
+		@include column(15);
+	}
+	.l-grid-16 {
+		@include column(16);
+	}
+	.l-grid-17 {
+		@include column(17);
+	}
+	.l-grid-18 {
+		@include column(18);
+	}
+
+	.l-clear-1{
+		margin-left: 06.8585944% !important;
+	}
+
+	.l-clear-2{
+		margin-left: 13.7171888% !important;
+	}
+}
+//
+// Site wrappers (grid & site wrappers)
+//
+.l-grid-row {
+	@extend .cf;
+	margin: 0;
+
+	&.extended-row{
+		margin: 75px 0;
+	}
+}
+
+.l-content {
+	@extend .cf;
+	position: relative;
+	width: 92%;
+	max-width: $gridsystem-width;
+	margin: 0 auto;
+}
+
+/*
+ * Collapsing the margins and paddings
+ */
+.collapse {
+	margin: 0;
+	padding: 0;
+}
+
+.l-right {
+	float: right;
+}
+
+.l-left {
+	float: left;
+}
+
+.l-centered {
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------
+ Container
+----------------------------------------------------------------------------*/
+.container {
+	max-width: #{$gridsystem-width}px;
+	width: 92%;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.inner-content {
+	padding: 0;
+}

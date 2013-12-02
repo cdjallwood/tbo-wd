@@ -1,0 +1,92 @@
+//
+// Header Specifics
+//
+
+.site-head{
+	@include clearfix;
+	position: relative;
+}
+
+@media screen and (min-width: $tablet){
+	.site-head{
+	}
+}
+
+//
+// Body Specifics
+//
+
+.site-body{
+	position: relative;
+	z-index: 0;
+}
+
+//
+// Footer specifics
+//
+
+.site-foot{
+	background: #fff;
+	color: $greyscale-dark;
+	padding: 50px 0;
+
+	h3{
+		font-size: 1rem;
+		span{
+			display: block;
+			font-weight: 400;
+		}
+	}
+
+	.footer-list{
+		.list-item{
+			a {
+				font-size: 0.75em;
+				text-transform: uppercase;
+				font-weight: 400;
+				padding: 0 1em 0 1.5em;
+				border-left: 1px solid $dark-blue;
+			}
+
+			&:first-child{
+				a{
+					padding-left: 0;
+					border-left: 0;
+				}
+			}
+		}
+	}
+}
+
+//
+// Block specifics
+//
+
+.blog-block{
+	background: url("#{$imgUrl}/blog-bg-repeat.jpg") repeat;
+}
+
+.blog-entry{
+	background: #fff;
+	padding: 18px;
+	border-radius: 8px;
+	border-bottom: 2px solid #d0c7c1;
+
+	p{
+		font-size: 0.875rem;
+	}
+
+	a{
+		@include subheading;
+		font-size: 0.875rem;
+		color: $orange;
+	}
+}
+
+.speaker-list{
+	margin-top: 2%;
+}
+
+.sign-up-cta{
+	background: url("#{$imgUrl}/sign-up-bg-repeat.jpg") repeat;
+}

@@ -1,0 +1,60 @@
+/* =============================================================================
+   Info Module - Generic Content block
+   ========================================================================== */
+
+.m-info-block{
+	@include clearfix;
+	padding: 45px 0 80px;
+	margin: 0;
+
+	&.collapse-block{
+		padding: 0;
+	}
+
+	&.collapse-block-bottom{
+		padding-bottom: 0;
+	}
+
+	&.extended-block{
+		padding: 120px 0;
+	}
+
+	header{
+		text-align: center;
+	}
+
+	footer{
+		text-align: center;
+		a,
+		p {
+			@include subheading;
+			display: block;
+		}
+
+		a{
+			text-decoration: underline;
+		}
+	}
+}
+
+
+@media screen and (min-width: $tablet){
+	.m-info-block{
+		padding: 105px 0 150px;
+
+		&.extended-block{
+			padding: 300px 0;
+		}
+		&.venue-block{
+			position: relative;
+
+			.venue-block-text{
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				top: 200px;
+				left: 13.5%;
+			}
+		}
+	}
+}

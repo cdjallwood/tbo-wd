@@ -1,0 +1,33 @@
+//
+// LESS COMMENT HERE - varibles wont be shown in the compiled output so less comments are fine.
+//
+
+// Grid Properties
+$column-width: 44;
+$gutter-width: 21;
+$columns: 18;
+
+// Total widths
+$gridsystem-width: ($column-width*$columns) + ($gutter-width*$columns);
+$max-width: $gridsystem-width;
+$total-width: 100%; // change to 100% for responsive builds or to $gridsystem-width for static builds
+
+$desk : $gridsystem-width;
+
+// =================
+// Base Gutter
+// =================
+
+// Static gutter calculation
+// $base-gutter: $gutter-width/2;
+
+// Responsive gutter calculation
+$base-gutter: $total-width*(($gutter-width*.5)/$gridsystem-width);
+
+@mixin column($x,$columns:$columns) {
+	// Static width calculation
+	//width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / $gridsystem-width);
+
+	// Responsive width calculation
+	width: $total-width*(((($gutter-width+$column-width)*$x)-$gutter-width) / $gridsystem-width);
+}
