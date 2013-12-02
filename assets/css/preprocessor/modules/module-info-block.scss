@@ -21,7 +21,7 @@
 
 	header{
 		text-align: center;
-		margin-bottom: 42px;
+		margin-bottom: 21px;
 	}
 
 	footer{
@@ -79,6 +79,14 @@
 				top: 200px;
 				left: 13.5%;
 			}
+		}
+
+		header {
+			margin-bottom: 42px;
+		}
+
+		footer{
+			margin-top: 42px;
 		}
 	}
 }

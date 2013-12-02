@@ -28,7 +28,7 @@
 .site-foot{
 	background: #fff;
 	color: $greyscale-dark;
-	padding: 50px 0;
+	padding: 50px 0 40px;
 
 	h3{
 		font-size: 1rem;
@@ -39,6 +39,7 @@
 	}
 
 	.footer-list{
+		margin-top: 42px;
 		.list-item{
 			a {
 				font-size: 0.75em;
@@ -71,6 +72,10 @@
 	padding: 18px;
 	border-radius: 8px;
 	border-bottom: 2px solid #d0c7c1;
+
+	&:hover{
+		background: rgb(252,251,250);
+	}
 
 	p{
 		font-size: 0.875rem;
