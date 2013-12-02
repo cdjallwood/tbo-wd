@@ -12,6 +12,9 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
+	<!-- REMOVE ME -->
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
 	<!-- Project Icons (favicons, iPhone icons etc) -->
 	<link rel="shortcut icon" href="favicon.png" type="image/png" />
 	<link rel="apple-touch-icon" href="57x57.png">
@@ -36,14 +39,14 @@
 	<header class="site-head m-masthead" role="banner">
 		<section class="container">
 			<nav class="l-left">
-				<ul class="m-inline-list">
+				<ul class="m-inline-list tablet">
 					<li class="list-item"><a href="#">Conference</a></li>
 					<li class="list-item"><a href="#">Schedule</a></li>
 					<li class="list-item"><a href="#">Blog</a></li>
 				</ul>
 			</nav>
-			<span class="l-right">
-				<p>Cardiff, 18th July 2014 - Early Bird &pound;99 (+ VAT) <a class="primary" href="#">Buy Tickets</a></p>
+			<span class="conf-cta l-right">
+				<p>Cardiff, 18th July 2014 - Early Bird &pound;99 (+ VAT) <span><a class="primary" href="#">Buy Tickets</a></span></p>
 			</span>
 		</section>
 	</header><!-- /#site-head -->

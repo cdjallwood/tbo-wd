@@ -726,6 +726,9 @@ tfoot th:first-child {
 .sign-up-cta {
   background: url("../img/sign-up-bg-repeat.jpg") repeat; }
 
+@media screen and (max-width: 400px) {
+  .conf-cta span {
+    display: block; } }
 /* =============================================================================
    Layout CSS - Grids widths, column gutters & wrappers
    ========================================================================== */
@@ -1314,7 +1317,8 @@ tfoot th:first-child {
   .m-info-block.extended-block {
     padding: 120px 0; }
   .m-info-block header {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 42px; }
   .m-info-block footer {
     text-align: center; }
     .m-info-block footer a,
@@ -1326,6 +1330,20 @@ tfoot th:first-child {
     .m-info-block footer a {
       text-decoration: underline; }
 
+@media screen and (max-width: 680px) {
+  .m-info-block.venue-block {
+    position: relative;
+    height: 450px; }
+    .m-info-block.venue-block img {
+      height: 100%;
+      width: auto;
+      max-width: none; }
+    .m-info-block.venue-block .venue-block-text {
+      position: absolute;
+      z-index: 1;
+      left: 20px;
+      right: 20px;
+      top: 50px; } }
 @media screen and (min-width: 680px) {
   .m-info-block {
     padding: 105px 0 150px; }

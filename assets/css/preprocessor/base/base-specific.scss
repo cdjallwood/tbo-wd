@@ -90,3 +90,11 @@
 .sign-up-cta{
 	background: url("#{$imgUrl}/sign-up-bg-repeat.jpg") repeat;
 }
+
+@media screen and (max-width: $palm){
+	.conf-cta{
+		span{
+			display: block;
+		}
+	}
+}
