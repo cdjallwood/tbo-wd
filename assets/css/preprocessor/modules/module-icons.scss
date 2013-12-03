@@ -1,0 +1,25 @@
+/* =============================================================================
+   Icon Module - Icons and the like
+   ========================================================================== */
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.5rem;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lanyrd:before {
+    content: "\e600";
+}
+.icon-twitter:before {
+    content: "\e601";
+}

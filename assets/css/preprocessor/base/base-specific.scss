@@ -39,14 +39,11 @@
 	}
 
 	.footer-list{
-		margin-top: 42px;
 		.list-item{
 			a {
 				font-size: 0.75em;
 				text-transform: uppercase;
 				font-weight: 400;
-				padding: 0 1em 0 1.5em;
-				border-left: 1px solid $dark-blue;
 			}
 
 			&:first-child{
@@ -54,6 +51,18 @@
 					padding-left: 0;
 					border-left: 0;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.site-foot{
+		.footer-list{
+			margin-top: 42px;
+			.list-item a{
+				padding: 0 1em 0 1.5em;
+				border-left: 1px solid $dark-blue;
 			}
 		}
 	}
@@ -119,11 +128,11 @@
 	}
 
 	h2{
-		font-size: 3.5rem;
+		font-size: 1.5rem;
 
 		span{
 			display: block;
-			font-size: 3rem;
+			font-size: 1.25rem;
 			letter-spacing: 2px;
 		}
 	}
@@ -137,15 +146,28 @@
 	}
 }
 
+@media screen and (min-width: $tablet){
+	.sign-up-cta{
+		h2{
+			font-size: 3.5rem;
+
+			span{
+				font-size: 3rem;
+				left-spacing: 2px;
+			}
+		}
+	}
+}
+
 .speaker-list,
 .sponsor {
 	margin-bottom: 2%;
 }
 
-// @media screen and (max-width: $palm){
-// 	.conf-cta{
-// 		span{
-// 			display: block;
-// 		}
-// 	}
-// }
+.social-list{
+	margin-top: 21px;
+}
+
+.social-item [class^="icon-"]{
+	margin-right: 11px;
+}

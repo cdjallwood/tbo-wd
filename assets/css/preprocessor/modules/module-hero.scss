@@ -39,6 +39,14 @@
 @media screen and (min-width: $tablet){
 	.m-hero{
 		> div{
+			top: 10%;
+		}
+	}
+}
+
+@media screen and (min-width: $lap){
+	.m-hero{
+		> div{
 			top: 14.5%;
 		}
 

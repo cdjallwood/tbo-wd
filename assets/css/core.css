@@ -119,6 +119,13 @@ a:active {
 /* =============================================================================
    Typography
    ========================================================================== */
+@font-face {
+  font-family: 'icomoon';
+  src: url("/assets/fonts/icomoon.eot");
+  src: url("/assets/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon.ttf") format("truetype"), url("/assets/fonts/icomoon.woff") format("woff"), url("/assets/fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /*
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
@@ -134,21 +141,34 @@ h2,
 h3 {
   text-transform: uppercase; }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 1.875rem;
   line-height: 1em;
   color: #fff;
   border-bottom: 0;
   letter-spacing: -2px; }
-  h1 span, .h1 span {
+  h1 span,
+  .h1 span {
     font-weight: 400; }
 
 @media screen and (min-width: 680px) {
-  h1, .h1 {
+  h1,
+  .h1 {
+    font-size: 3rem;
+    margin: 0.5em 0 0.25rem;
+    letter-spacing: -3px; }
+    h1 span,
+    .h1 span {
+      font-size: 2.875rem; } }
+@media screen and (min-width: 800px) {
+  h1,
+  .h1 {
     font-size: 5.4rem;
     margin: 0.75em 0 0.15em;
     letter-spacing: -5px; }
-    h1 span, .h1 span {
+    h1 span,
+    .h1 span {
       font-size: 5rem;
       letter-spacing: 3px; } }
 h2, .h2 {
@@ -702,18 +722,20 @@ tfoot th:first-child {
     .site-foot h3 span {
       display: block;
       font-weight: 400; }
+  .site-foot .footer-list .list-item a {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .site-foot .footer-list .list-item:first-child a {
+    padding-left: 0;
+    border-left: 0; }
+
+@media screen and (min-width: 680px) {
   .site-foot .footer-list {
     margin-top: 42px; }
     .site-foot .footer-list .list-item a {
-      font-size: 0.75em;
-      text-transform: uppercase;
-      font-weight: 400;
       padding: 0 1em 0 1.5em;
-      border-left: 1px solid #162d39; }
-    .site-foot .footer-list .list-item:first-child a {
-      padding-left: 0;
-      border-left: 0; }
-
+      border-left: 1px solid #162d39; } }
 .blog-block {
   background: url("../img/blog-bg-repeat.jpg") repeat; }
 
@@ -749,10 +771,10 @@ tfoot th:first-child {
   .sign-up-cta .h1 {
     color: #162d39; }
   .sign-up-cta h2 {
-    font-size: 3.5rem; }
+    font-size: 1.5rem; }
     .sign-up-cta h2 span {
       display: block;
-      font-size: 3rem;
+      font-size: 1.25rem;
       letter-spacing: 2px; }
   .sign-up-cta p {
     font-family: 'Archer SSm A', 'Archer SSm B';
@@ -761,9 +783,21 @@ tfoot th:first-child {
   .sign-up-cta .m-btn {
     margin-top: 21px; }
 
+@media screen and (min-width: 680px) {
+  .sign-up-cta h2 {
+    font-size: 3.5rem; }
+    .sign-up-cta h2 span {
+      font-size: 3rem;
+      left-spacing: 2px; } }
 .speaker-list,
 .sponsor {
   margin-bottom: 2%; }
+
+.social-list {
+  margin-top: 21px; }
+
+.social-item [class^="icon-"] {
+  margin-right: 11px; }
 
 /* =============================================================================
    Layout CSS - Grids widths, column gutters & wrappers
@@ -1286,13 +1320,15 @@ tfoot th:first-child {
   .m-inline-list:after {
     clear: both; }
   .m-inline-list .list-item {
-    display: inline-block;
+    display: block;
     margin-right: 4px;
     /* removing the inline-block spacing */
-    margin: 0;
+    margin: 11px 0;
     padding: 0;
     position: relative;
     z-index: 1; }
+    .m-inline-list .list-item span {
+      vertical-align: middle; }
     .m-inline-list .list-item:first-child {
       margin-left: 0;
       padding-left: 0; }
@@ -1301,7 +1337,9 @@ tfoot th:first-child {
 
 @media screen and (min-wwidth: 680px) {
   .m-inline-list.sponsor {
-    margin-top: 1.9%; } }
+    margin-top: 1.9%; }
+  .m-inline-list .list-item {
+    display: inline-block; } }
 /*
  * Stacked Styling (from top to bottom)
  */
@@ -1365,22 +1403,28 @@ tfoot th:first-child {
   .m-info-block {
     padding: 105px 0 150px; }
     .m-info-block.extended-block {
-      padding: 240px 0; }
+      padding: 150px 0; }
     .m-info-block.venue-block {
       position: relative; }
       .m-info-block.venue-block .venue-block-text {
         position: absolute;
         z-index: 1;
         left: 0;
-        top: 200px;
-        left: 13.5%; }
+        top: 10%;
+        left: 9%;
+        width: 48.20513%; }
     .m-info-block header {
       margin-bottom: 42px; }
     .m-info-block footer {
       margin-top: 42px; } }
 @media screen and (min-width: 800px) {
   .m-info-block.extended-block {
-    padding: 200px 0; } }
+    padding: 200px 0; }
+  .m-info-block.venue-block .venue-block-text {
+    width: 37.09402%; } }
+@media screen and (min-width: 1170) {
+  .m-info-block.venue-block {
+    width: 25.98291%; } }
 /* =============================================================================
    Hero Module - Hero block
    ========================================================================== */
@@ -1409,6 +1453,9 @@ tfoot th:first-child {
       width: auto;
       max-width: none; } }
 @media screen and (min-width: 680px) {
+  .m-hero > div {
+    top: 10%; } }
+@media screen and (min-width: 800px) {
   .m-hero > div {
     top: 14.5%; }
   .m-hero p {
@@ -1454,3 +1501,24 @@ tfoot th:first-child {
     padding: 16px 20px; }
     .m-btn + .m-btn {
       margin-left: 1.5%; } }
+/* =============================================================================
+   Icon Module - Icons and the like
+   ========================================================================== */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 1.5rem;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-lanyrd:before {
+  content: "\e600"; }
+
+.icon-twitter:before {
+  content: "\e601"; }

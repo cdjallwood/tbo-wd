@@ -81,7 +81,7 @@
 
 		<article class="m-info-block venue-block d-highlight collapse-block">
 			<img src="assets/img/venue-img.jpg" alt="">
-			<div class="l-grid-5 venue-block-text">
+			<div class="venue-block-text">
 				<h2>The Venue</h2>
 				<p>The Business of Web Design is set in the beautiful Atrium building at the University of South Wales.</p>
 				<p>Featuring state-of-the-art facilities for audio and video production and editing, graphic design, studio recording and more, the building is an engine room for the next generation of media practitioners and thinkers.</p>

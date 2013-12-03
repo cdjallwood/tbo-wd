@@ -18,12 +18,16 @@
 	@include clearfix;
 
 	.list-item {
-		display: inline-block;
+		display: block;
 		margin-right: 4px; /* removing the inline-block spacing */
-		margin: 0;
+		margin: 11px 0;
 		padding: 0;
 		position: relative;
 		z-index: 1;
+
+		span{
+			vertical-align: middle;
+		}
 
 		&:first-child{
 			margin-left: 0;
@@ -42,6 +46,10 @@
 	.m-inline-list{
 		&.sponsor{
 			margin-top: 1.9%;
+		}
+
+		.list-item{
+			display: inline-block;
 		}
 	}
 }

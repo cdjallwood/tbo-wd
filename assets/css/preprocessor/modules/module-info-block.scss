@@ -72,7 +72,7 @@
 		padding: 105px 0 150px;
 
 		&.extended-block{
-			padding: 240px 0;
+			padding: 150px 0;
 		}
 		&.venue-block{
 			position: relative;
@@ -81,8 +81,9 @@
 				position: absolute;
 				z-index: 1;
 				left: 0;
-				top: 200px;
-				left: 13.5%;
+				top: 10%;
+				left: 9%;
+				width: 48.20513%;
 			}
 		}
 
@@ -101,6 +102,20 @@
 	.m-info-block{
 		&.extended-block{
 			padding: 200px 0;
+		}
+
+		&.venue-block{
+			.venue-block-text{
+				width: 37.09402%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desk){
+	.m-info-block{
+		&.venue-block{
+			width: 25.98291%;
 		}
 	}
 }
