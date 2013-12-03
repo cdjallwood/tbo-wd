@@ -135,18 +135,19 @@ h3 {
   text-transform: uppercase; }
 
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 1.875rem;
   line-height: 1em;
   color: #fff;
   border-bottom: 0;
-  letter-spacing: -5px; }
+  letter-spacing: -2px; }
   h1 span, .h1 span {
     font-weight: 400; }
 
 @media screen and (min-width: 680px) {
   h1, .h1 {
     font-size: 5.4rem;
-    margin: 0.75em 0 0.15em; }
+    margin: 0.75em 0 0.15em;
+    letter-spacing: -5px; }
     h1 span, .h1 span {
       font-size: 5rem; } }
 h2, .h2 {
@@ -325,7 +326,8 @@ img {
   -ms-interpolation-mode: bicubic;
   /* 2 */
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 auto; }
 
 /*
  * Corrects overflow displayed oddly in IE9
@@ -614,12 +616,12 @@ tfoot th:first-child {
 /*
  * Floating helpers
  */
-.l-left {
-  float: left !important; }
+@media screen and (min-width: 680px) {
+  .l-left {
+    float: left !important; }
 
-.l-right {
-  float: right !important; }
-
+  .l-right {
+    float: right !important; } }
 .primary {
   color: #ffa94d !important; }
 
@@ -730,9 +732,12 @@ tfoot th:first-child {
 @media screen and (min-width: 680px) {
   .blog-entry + .blog-entry {
     margin-top: 0; } }
-.speaker-list {
-  margin-top: 2%; }
+.tile-item {
+  margin-top: 4% !important; }
 
+@media screen and (min-width: 680px) {
+  .tile-item {
+    margin-top: 0% !important; } }
 .sign-up-cta {
   background: url("../img/sign-up-bg-repeat.jpg") repeat; }
   .sign-up-cta .h1 {
@@ -744,9 +749,10 @@ tfoot th:first-child {
     font-weight: 500;
     font-style: normal; }
 
-@media screen and (max-width: 400px) {
-  .conf-cta span {
-    display: block; } }
+.speaker-list,
+.sponsor {
+  margin-bottom: 2%; }
+
 /* =============================================================================
    Layout CSS - Grids widths, column gutters & wrappers
    ========================================================================== */
@@ -1001,46 +1007,22 @@ tfoot th:first-child {
     width: 3.76068%; }
 
   .t-grid-2 {
-    width: 9.31624%; }
+    width: 23.20513%; }
 
-  .t-grid-3 {
-    width: 14.87179%; }
-
-  .t-grid-4 {
-    width: 20.42735%; }
-
-  .t-grid-5 {
-    width: 25.98291%; }
-
-  .t-grid-6 {
+  .t-grid-third {
+    display: inline;
+    float: left;
+    margin: 0 0.89744%;
     width: 31.53846%; }
 
-  .t-grid-7 {
-    width: 37.09402%; }
-
-  .t-grid-8 {
-    width: 42.64957%; }
-
-  .t-grid-9 {
+  .t-grid-4 {
     width: 48.20513%; }
 
-  .t-grid-10 {
-    width: 53.76068%; }
+  .t-grid-6 {
+    width: 73.20513%; }
 
-  .t-grid-11 {
-    width: 59.31624%; }
-
-  .t-grid-12 {
-    width: 64.87179%; }
-
-  .t-grid-13 {
-    width: 70.42735%; }
-
-  .t-grid-14 {
-    width: 75.98291%; }
-
-  .t-grid-15 {
-    width: 81.53846%; }
+  .t-grid-8 {
+    width: 98.20513%; }
 
   .t-clear-1 {
     margin-left: 06.8585944% !important; } }
@@ -1219,8 +1201,11 @@ tfoot th:first-child {
 .l-grid-row {
   margin: 0; }
   .l-grid-row.extended-row {
-    margin: 75px 0; }
+    margin: 35px 0; }
 
+@media screen and (min-width: 680px) {
+  .l-grid-row.extended-row {
+    margin: 75px 0; } }
 .l-content {
   position: relative;
   width: 92%;
@@ -1233,15 +1218,6 @@ tfoot th:first-child {
 .collapse {
   margin: 0;
   padding: 0; }
-
-.l-right {
-  float: right; }
-
-.l-left {
-  float: left; }
-
-.l-centered {
-  text-align: center; }
 
 /*----------------------------------------------------------------------------
  Container
@@ -1302,11 +1278,12 @@ tfoot th:first-child {
     .m-inline-list .list-item:first-child {
       margin-left: 0;
       padding-left: 0; }
-  .m-inline-list.sponsor {
-    margin-top: 1.9%; }
   .m-inline-list .tile-item img {
     border-radius: 8px; }
 
+@media screen and (min-wwidth: 680px) {
+  .m-inline-list.sponsor {
+    margin-top: 1.9%; } }
 /*
  * Stacked Styling (from top to bottom)
  */
@@ -1322,7 +1299,7 @@ tfoot th:first-child {
    ========================================================================== */
 .m-info-block {
   *zoom: 1;
-  padding: 45px 0 80px;
+  padding: 45px 0 60px;
   margin: 0; }
   .m-info-block:before, .m-info-block:after {
     content: "";
@@ -1334,7 +1311,7 @@ tfoot th:first-child {
   .m-info-block.collapse-block-bottom {
     padding-bottom: 0; }
   .m-info-block.extended-block {
-    padding: 120px 0; }
+    padding: 80px 0; }
   .m-info-block header {
     text-align: center;
     margin-bottom: 21px; }
@@ -1363,12 +1340,14 @@ tfoot th:first-child {
       z-index: 1;
       left: 20px;
       right: 20px;
-      top: 50px; } }
+      top: 50px; }
+  .m-info-block.palm-reduced-block {
+    padding-bottom: 30px; } }
 @media screen and (min-width: 680px) {
   .m-info-block {
     padding: 105px 0 150px; }
     .m-info-block.extended-block {
-      padding: 300px 0; }
+      padding: 240px 0; }
     .m-info-block.venue-block {
       position: relative; }
       .m-info-block.venue-block .venue-block-text {
@@ -1381,6 +1360,9 @@ tfoot th:first-child {
       margin-bottom: 42px; }
     .m-info-block footer {
       margin-top: 42px; } }
+@media screen and (min-width: 800px) {
+  .m-info-block.extended-block {
+    padding: 200px 0; } }
 /* =============================================================================
    Hero Module - Hero block
    ========================================================================== */
@@ -1397,20 +1379,21 @@ tfoot th:first-child {
     font-family: 'Archer SSm A', 'Archer SSm B';
     font-weight: 500;
     font-style: normal;
-    font-size: 1.25rem;
-    line-height: 1.25em;
     color: #fff; }
 
 @media screen and (max-width: 680px) {
   .m-hero {
     overflow: hidden; }
     .m-hero img {
-      height: 450px;
+      height: 400px;
       width: auto;
       max-width: none; } }
 @media screen and (min-width: 680px) {
   .m-hero > div {
-    top: 14.5%; } }
+    top: 14.5%; }
+  .m-hero p {
+    font-size: 1.25rem;
+    line-height: 1.25em; } }
 /* =============================================================================
    Button Module - Buttons
    ========================================================================== */
@@ -1420,7 +1403,7 @@ tfoot th:first-child {
   color: #fff;
   text-transform: uppercase;
   font-size: 0.875rem;
-  padding: 16px 20px; }
+  padding: 16px 16px; }
   .m-btn.btn-primary {
     background: #ffa94d; }
     .m-btn.btn-primary:hover {
@@ -1430,4 +1413,10 @@ tfoot th:first-child {
     .m-btn.btn-secondary:hover {
       background: #b4b0a4; }
   .m-btn + .m-btn {
-    margin-left: 1.5%; }
+    margin-left: 4%; }
+
+@media screen and (min-width: 680px) {
+  .m-btn {
+    padding: 16px 20px; }
+    .m-btn + .m-btn {
+      margin-left: 1.5%; } }

@@ -8,7 +8,7 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 0.875rem;
-	padding: 16px 20px;
+	padding: 16px 16px;
 	
 	&.btn-primary{
 		background: $orange;
@@ -27,6 +27,16 @@
 	}
 
 	+ .m-btn{
-		margin-left: 1.5%;
+		margin-left: 4%;
 	}
+}
+
+@media screen and (min-width: $tablet){
+	.m-btn{
+		padding: 16px 20px;
+
+		+ .m-btn{
+			margin-left: 1.5%;
+		}
+	}	
 }

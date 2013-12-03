@@ -107,12 +107,15 @@
 /*
  * Floating helpers
  */
-.l-left {
-    float: left !important;
-}
 
-.l-right {
-    float: right !important;
+@media screen and (min-width: $tablet){
+    .l-left {
+        float: left !important;
+    }
+
+    .l-right {
+        float: right !important;
+    }
 }
 
 

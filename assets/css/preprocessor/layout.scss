@@ -105,46 +105,20 @@
 		@include column(1);
 	}
 	.t-grid-2 {
-		@include column(2);
+		@include column(4.5);
 	}
-	.t-grid-3 {
-		@include column(3);
-	}
-	.t-grid-4 {
-		@include column(4);
-	}
-	.t-grid-5 {
-		@include column(5);
-	}
-	.t-grid-6 {
+	.t-grid-third{
+		@include column-module;
 		@include column(6);
 	}
-	.t-grid-7 {
-		@include column(7);
-	}
-	.t-grid-8 {
-		@include column(8);
-	}
-	.t-grid-9 {
+	.t-grid-4 {
 		@include column(9);
 	}
-	.t-grid-10 {
-		@include column(10);
+	.t-grid-6 {
+		@include column(13.5);
 	}
-	.t-grid-11 {
-		@include column(11);
-	}
-	.t-grid-12 {
-		@include column(12);
-	}
-	.t-grid-13 {
-		@include column(13);
-	}
-	.t-grid-14 {
-		@include column(14);
-	}
-	.t-grid-15 {
-		@include column(15);
+	.t-grid-8 {
+		@include column(18);
 	}
 
 	.t-clear-1{
@@ -257,7 +231,15 @@
 	margin: 0;
 
 	&.extended-row{
-		margin: 75px 0;
+		margin: 35px 0;
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.l-grid-row{
+		&.extended-row{
+			margin: 75px 0;
+		}
 	}
 }
 
@@ -275,18 +257,6 @@
 .collapse {
 	margin: 0;
 	padding: 0;
-}
-
-.l-right {
-	float: right;
-}
-
-.l-left {
-	float: left;
-}
-
-.l-centered {
-	text-align: center;
 }
 
 /*----------------------------------------------------------------------------

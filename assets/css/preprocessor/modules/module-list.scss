@@ -31,13 +31,17 @@
 		}
 	}
 
-	&.sponsor{
-		margin-top: 1.9%;
-	}
-
 	.tile-item{
 		img{
 			border-radius: 8px;
+		}
+	}
+}
+
+@media screen and (min-wwidth: $tablet){
+	.m-inline-list{
+		&.sponsor{
+			margin-top: 1.9%;
 		}
 	}
 }

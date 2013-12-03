@@ -4,7 +4,7 @@
 
 .m-info-block{
 	@include clearfix;
-	padding: 45px 0 80px;
+	padding: 45px 0 60px;
 	margin: 0;
 
 	&.collapse-block{
@@ -16,7 +16,7 @@
 	}
 
 	&.extended-block{
-		padding: 120px 0;
+		padding: 80px 0;
 	}
 
 	header{
@@ -59,6 +59,10 @@
 				top: 50px;
 			}
 		}
+
+		&.palm-reduced-block{
+			padding-bottom: 30px;
+		}
 	}
 }
 
@@ -68,7 +72,7 @@
 		padding: 105px 0 150px;
 
 		&.extended-block{
-			padding: 300px 0;
+			padding: 240px 0;
 		}
 		&.venue-block{
 			position: relative;
@@ -88,6 +92,15 @@
 
 		footer{
 			margin-top: 42px;
+		}
+	}
+}
+
+
+@media screen and (min-width: $lap){
+	.m-info-block{
+		&.extended-block{
+			padding: 200px 0;
 		}
 	}
 }
