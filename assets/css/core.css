@@ -720,7 +720,7 @@ tfoot th:first-child {
     background: #fcfbfa; }
   .blog-entry p {
     font-size: 0.875rem; }
-  .blog-entry a {
+  .blog-entry > a {
     font-family: 'Archer SSm A', 'Archer SSm B';
     font-weight: 500;
     font-style: normal;
@@ -1380,6 +1380,8 @@ tfoot th:first-child {
     font-weight: 500;
     font-style: normal;
     color: #fff; }
+  .m-hero .m-btn {
+    margin-top: 21px; }
 
 @media screen and (max-width: 680px) {
   .m-hero {

@@ -95,24 +95,24 @@
 				</header>
 				<div class="l-grid-row extended-row">
 					<div class="l-grid-6 blog-entry">
-						<h3>The traits of a good freelancer</h3>
+						<h3><a href="#">The traits of a good freelancer</a></h3>
 						<p>Working with freelancers is a key ingredient for how my business has grown; they are the highly talented, flexible resource..</p>
 						<a href="#">Continue Reading</a>
 					</div>
 					<div class="l-grid-6 blog-entry">
-						<h3>Getting Paid</h3>
+						<h3><a href="#">Getting Paid</a></h3>
 						<p>Getting paid is obviously pretty important. Without money our businesses are dead in the water; poor cash flow 
 is the..</p>
 						<a href="#">Continue Reading</a>
 					</div>
 					<div class="l-grid-6 blog-entry">
-						<h3>The traits of a good freelancer</h3>
+						<h3><a href="#">The traits of a good freelancer</a></h3>
 						<p>Working with freelancers is a key ingredient for how my business has grown; they are the highly talented, flexible resource..</p>
 						<a href="#">Continue Reading</a>
 					</div>
 				</div>
 				<footer>
-					<a href="#">Read more stories from the blog</a>
+					<a href="#"><em>Read more stories from the blog</em></a>
 				</footer>
 			</div>
 		</article>
@@ -195,7 +195,7 @@ is the..</p>
 				</div>
 				<footer>
 					<p>Interested in sponsorship opportunities at The Business of Web Design?</p>
-					<a href="#">Take a look at our sponsorship pack.</a>
+					<a href="#"><em>Take a look at our sponsorship pack.</em></a>
 				</footer>
 			</div>
 		</article>
