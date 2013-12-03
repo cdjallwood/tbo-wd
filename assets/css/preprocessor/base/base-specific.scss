@@ -116,14 +116,24 @@
 
 	.h1{
 		color: $dark-blue;
+	}
+
+	h2{
+		font-size: 3.5rem;
 
 		span{
 			display: block;
+			font-size: 3rem;
+			letter-spacing: 2px;
 		}
 	}
 
 	p{
 		@include subheading;
+	}
+
+	.m-btn{
+		margin-top: 21px;
 	}
 }
 

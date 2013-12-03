@@ -149,7 +149,8 @@ h1, .h1 {
     margin: 0.75em 0 0.15em;
     letter-spacing: -5px; }
     h1 span, .h1 span {
-      font-size: 5rem; } }
+      font-size: 5rem;
+      letter-spacing: 3px; } }
 h2, .h2 {
   font-size: 1.5rem;
   line-height: 1.2em;
@@ -613,6 +614,11 @@ tfoot th:first-child {
 .centered {
   text-align: center !important; }
 
+.block-centered {
+  display: block !important;
+  margin: 0 auto !important;
+  float: none !important; }
+
 /*
  * Floating helpers
  */
@@ -742,12 +748,18 @@ tfoot th:first-child {
   background: url("../img/sign-up-bg-repeat.jpg") repeat; }
   .sign-up-cta .h1 {
     color: #162d39; }
-    .sign-up-cta .h1 span {
-      display: block; }
+  .sign-up-cta h2 {
+    font-size: 3.5rem; }
+    .sign-up-cta h2 span {
+      display: block;
+      font-size: 3rem;
+      letter-spacing: 2px; }
   .sign-up-cta p {
     font-family: 'Archer SSm A', 'Archer SSm B';
     font-weight: 500;
     font-style: normal; }
+  .sign-up-cta .m-btn {
+    margin-top: 21px; }
 
 .speaker-list,
 .sponsor {
@@ -1197,7 +1209,13 @@ tfoot th:first-child {
     margin-left: 06.8585944% !important; }
 
   .l-clear-2 {
-    margin-left: 13.7171888% !important; } }
+    margin-left: 13.7171888% !important; }
+
+  .l-clear-3 {
+    margin-left: 20.5757832% !important; }
+
+  .l-clear-4 {
+    margin-left: 22.27% !important; } }
 .l-grid-row {
   margin: 0; }
   .l-grid-row.extended-row {
@@ -1395,7 +1413,21 @@ tfoot th:first-child {
     top: 14.5%; }
   .m-hero p {
     font-size: 1.25rem;
-    line-height: 1.25em; } }
+    line-height: 1.25em; }
+  .m-hero.sub-hero {
+    height: 400px;
+    overflow: hidden; }
+    .m-hero.sub-hero img {
+      position: relative;
+      top: -160px; }
+    .m-hero.sub-hero .h2 {
+      font-size: 4.25rem;
+      line-height: 1em; }
+      .m-hero.sub-hero .h2 span {
+        font-size: 3.75rem;
+        letter-spacing: 2px; }
+    .m-hero.sub-hero > div {
+      top: 20%; } }
 /* =============================================================================
    Button Module - Buttons
    ========================================================================== */

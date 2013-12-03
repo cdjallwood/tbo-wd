@@ -46,5 +46,29 @@
 			font-size: 1.25rem;
 			line-height: 1.25em;
 		}
+
+		&.sub-hero{
+			height: 400px;
+			overflow: hidden;
+
+			img{
+				position: relative;
+				top: -160px;
+			}
+
+			.h2{
+				font-size: 4.25rem;
+				line-height: 1em;
+
+				span{
+					font-size: 3.75rem;
+					letter-spacing: 2px;
+				}
+			}
+
+			> div{
+				top: 20%;
+			}
+		}
 	}
 }
