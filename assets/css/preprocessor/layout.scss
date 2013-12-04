@@ -235,8 +235,8 @@
 // Site wrappers (grid & site wrappers)
 //
 .l-grid-row {
-	@extend .cf;
-	margin: 0;
+	@include clearfix;
+	margin: 0 0 21px;
 
 	&.extended-row{
 		margin: 35px 0;

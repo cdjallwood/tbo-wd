@@ -161,11 +161,11 @@ h1,
     h1 span,
     .h1 span {
       font-size: 2.875rem; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   h1,
   .h1 {
     font-size: 5.4rem;
-    margin: 0.75em 0 0.15em;
+    margin: 0em 0 0.15em;
     letter-spacing: -5px; }
     h1 span,
     .h1 span {
@@ -593,6 +593,9 @@ tfoot th:first-child {
 .tablet {
   display: none !important; }
 
+.max-large-palm {
+  display: block; }
+
 .large-palm {
   display: none !important; }
 
@@ -613,7 +616,10 @@ tfoot th:first-child {
 
 @media screen and (min-width: 540px) {
   .large-palm {
-    display: block !important; } }
+    display: block !important; }
+
+  .max-large-palm {
+    display: none !important; } }
 @media screen and (min-width: 680px) {
   .tablet {
     display: block !important; }
@@ -671,6 +677,11 @@ tfoot th:first-child {
   .d-highlight a {
     color: #fff; }
 
+.archer-italic {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 500;
+  font-style: normal; }
+
 /* =============================================================================
    Site Header, Footer & Body
    ========================================================================== */
@@ -690,23 +701,22 @@ tfoot th:first-child {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before, .l-grid-row:before, .l-content:before,
+.cf:before, .l-content:before,
 .cf:after,
-.l-grid-row:after,
 .l-content:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
-.cf:after, .l-grid-row:after, .l-content:after {
+.cf:after, .l-content:after {
   clear: both; }
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf, .l-grid-row, .l-content {
+.cf, .l-content {
   *zoom: 1; }
 
 /* =====================================================================================
@@ -721,13 +731,19 @@ tfoot th:first-child {
   .nav-icon.active .icon-menu {
     color: #c1e5e7; }
 
+@media screen and (max-width: 680px) {
+  .nav-icon .icon-menu {
+    margin-top: -11px;
+    font-size: 1.25rem; } }
 .header-nav {
   background: #162d39;
   padding-top: 21px; }
   .header-nav .list-item a {
     color: #fff;
     padding: 11px 8px;
-    display: block; }
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase; }
     .header-nav .list-item a:hover {
       background: #204052; }
 
@@ -822,14 +838,33 @@ tfoot th:first-child {
       letter-spacing: 2px; } }
 .speaker-list,
 .sponsor {
-  margin-bottom: 2%; }
+  margin-bottom: 4%; }
+  .speaker-list:first-child,
+  .sponsor:first-child {
+    margin-bottom: 0; }
 
+@media screen and (min-width: 680px) {
+  .speaker-list,
+  .sponsor {
+    margin-bottom: 2%; }
+    .speaker-list:first-child,
+    .sponsor:first-child {
+      margin-bottom: 2%; } }
 .social-list {
   margin-top: 21px; }
 
 .social-item [class^="icon-"] {
   margin-right: 11px; }
 
+@media screen and (max-width: 680px) {
+  .conf-cta {
+    float: right; }
+    .conf-cta p {
+      font-size: 0.75rem; } }
+@media screen and (max-width: 680px) {
+  .about-block h2 {
+    margin-bottom: 0;
+    border-bottom: 0; } }
 /* =============================================================================
    Layout CSS - Grids widths, column gutters & wrappers
    ========================================================================== */
@@ -1282,7 +1317,13 @@ tfoot th:first-child {
   .l-clear-4 {
     margin-left: 22.27% !important; } }
 .l-grid-row {
-  margin: 0; }
+  *zoom: 1;
+  margin: 0 0 21px; }
+  .l-grid-row:before, .l-grid-row:after {
+    content: "";
+    display: table; }
+  .l-grid-row:after {
+    clear: both; }
   .l-grid-row.extended-row {
     margin: 35px 0; }
 
@@ -1449,7 +1490,7 @@ tfoot th:first-child {
     .m-info-block header {
       margin-bottom: 42px; }
     .m-info-block footer {
-      margin-top: 42px; } }
+      margin-top: 21px; } }
 @media screen and (min-width: 800px) {
   .m-info-block.extended-block {
     padding: 200px 0; }
@@ -1485,13 +1526,6 @@ tfoot th:first-child {
   .m-hero .m-btn {
     margin-top: 21px; }
 
-@media screen and (max-width: 680px) {
-  .m-hero {
-    overflow: hidden; }
-    .m-hero img {
-      height: 400px;
-      width: auto;
-      max-width: none; } }
 @media screen and (min-width: 680px) {
   .m-hero > div {
     top: 10%; } }
@@ -1515,6 +1549,9 @@ tfoot th:first-child {
         letter-spacing: 2px; }
     .m-hero.sub-hero > div {
       top: 20%; } }
+@media screen and (min-width: 1000px) {
+  .m-hero > div {
+    top: 19%; } }
 /* =============================================================================
    Button Module - Buttons
    ========================================================================== */
@@ -1555,6 +1592,7 @@ tfoot th:first-child {
   text-transform: none;
   line-height: 1;
   font-size: 1.5rem;
+  vertical-align: middle;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }

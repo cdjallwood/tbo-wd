@@ -58,7 +58,7 @@
 			</div>
 		</article>
 
-		<article class="m-info-block palm-reduced-block">
+		<article class="m-info-block about-block palm-reduced-block">
 			<div class="container">
 				<header>
 					<h2>About The Business of Web Design</h2>
@@ -75,6 +75,12 @@
 						<p>You'll be walking away with fistfuls of tactics to help take your business forward.</p>
 						<p>Early bird tickets are £99 (+VAT) and the standard price is £179 (+VAT)</p>
 					</div>
+				</div>
+				<div class="l-grid-row">
+					<ul class="m-inline-list social-list tablet">
+						<li class="archer-italic social-item l-grid-8 l-clear-1"><a href="#"><em><span class="ir">Twitter</span><span class="icon-twitter"></span><span>Follow us on Twitter</span></a></em></li>
+						<li class="archer-italic social-item l-grid-8"><a href="#"><em><span class="ir">Lanyrd</span><span class="icon-lanyrd"></span><span>Attend on Lanyrd</span></a></em></li>
+					</ul>
 				</div>
 			</div>
 		</article>

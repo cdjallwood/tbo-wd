@@ -46,6 +46,10 @@
     display: none !important;
 }
 
+.max-large-palm{
+    display: block;
+}
+
 .large-palm{
     display: none !important;
 }
@@ -73,6 +77,10 @@
 @media screen and (min-width: $large-palm){
     .large-palm{
         display: block !important;
+    }
+
+    .max-large-palm{
+        display: none !important;
     }
 }
 
@@ -162,4 +170,8 @@
     a{
         color: #fff;
     }
+}
+
+.archer-italic{
+    @include italic-subheading;
 }

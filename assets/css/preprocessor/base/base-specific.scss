@@ -18,6 +18,15 @@
 	}
 }
 
+@media screen and (max-width: $tablet){
+	.nav-icon{
+		.icon-menu{
+			margin-top: -11px;
+			font-size: 1.25rem;
+		}
+	}
+}
+
 .header-nav{
 	background: $dark-blue;
 	padding-top: 21px;
@@ -27,6 +36,8 @@
 			color: #fff;
 			padding: 11px 8px;
 			display: block;
+			font-size: 0.85rem;
+			text-transform: uppercase;
 
 			&:hover{
 				background: #204052;
@@ -38,11 +49,6 @@
 .site-head{
 	@include clearfix;
 	position: relative;
-}
-
-@media screen and (min-width: $tablet){
-	.site-head{
-	}
 }
 
 //
@@ -194,7 +200,22 @@
 
 .speaker-list,
 .sponsor {
-	margin-bottom: 2%;
+	margin-bottom: 4%;
+
+	&:first-child{
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.speaker-list,
+	.sponsor {
+		margin-bottom: 2%;
+
+		&:first-child{
+			margin-bottom: 2%;
+		}
+	}
 }
 
 .social-list{
@@ -203,4 +224,21 @@
 
 .social-item [class^="icon-"]{
 	margin-right: 11px;
+}
+
+@media screen and (max-width: $tablet){
+	.conf-cta{
+		float: right;
+		
+		p{
+			font-size: 0.75rem;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet){
+	.about-block h2{
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
 }

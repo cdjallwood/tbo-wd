@@ -24,17 +24,17 @@
 	}
 }
 
-@media screen and (max-width: $tablet){
+// @media screen and (max-width: $palm){
 	
-	.m-hero{
-		overflow: hidden;
-		img{
-			height: 400px;
-			width: auto;
-			max-width: none;
-		}
-	}
-}
+// 	.m-hero{
+// 		overflow: hidden;
+// 		img{
+// 			height: 400px;
+// 			width: auto;
+// 			max-width: none;
+// 		}
+// 	}
+// }
 
 @media screen and (min-width: $tablet){
 	.m-hero{
@@ -78,5 +78,11 @@
 				top: 20%;
 			}
 		}
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.m-hero > div{
+		top: 19%;
 	}
 }

@@ -1,5 +1,6 @@
 <div class="m-hero featured-hero">
-	<img src="assets/img/tbo-hero.jpg" alt="">
+	<img class="large-palm" src="assets/img/tbo-hero.jpg" alt="">
+	<img class="max-large-palm" src="assets/img/palm-tbo-hero.jpg" alt="">
 	<div class="container">
 		<h1>The Business of <br><span>Web Design</span></h1>
 		<p>The stuff you need to know to<br> run your own show</p>

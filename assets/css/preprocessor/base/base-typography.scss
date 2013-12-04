@@ -58,11 +58,11 @@ h1,
     }
 }
 
-@media screen and (min-width: $lap){
+@media screen and (min-width: $desktop){
     h1, 
     .h1{
         font-size: 5.4rem;
-        margin: 0.75em 0 0.15em;
+        margin: 0em 0 0.15em;
         letter-spacing: -5px;
 
         span{
