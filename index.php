@@ -10,46 +10,110 @@
 				</header>
 				<div class="l-grid-row">
 					<ul class="m-inline-list speaker-list">
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2 l-clear-1">
+						<li class="tile-item l-grid-4 t-grid-2 l-clear-1">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2">
+						<li class="tile-item l-grid-4 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2">
+						<li class="tile-item l-grid-4 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2">
+						<li class="tile-item l-grid-4 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
 					</ul>
 					<ul class="m-inline-list speaker-list">
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2 l-clear-1">
+						<li class="tile-item l-grid-4 t-grid-2 l-clear-1">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2">
+						<li class="tile-item l-grid-4 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2">
+						<li class="tile-item l-grid-4 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
-						<li class="tile-item l-grid-4 p-grid-2 t-grid-2">
+						<li class="tile-item l-grid-4 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sample-speaker.jpg" alt="">
+								<span class="p-grid-third">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+								</span>
+								<div class="orange-filter"></div>
+								<div class="speaker-overlay p-grid-two-third">
+									<h3>James Young</h3>
+									<p>Contracts for the Faint Hearted</p>
+									<span><p>@Welcomebrand</p></span>
+								</div>
 							</a>
 						</li>
 					</ul>
@@ -58,7 +122,7 @@
 			</div>
 		</article>
 
-		<article class="m-info-block about-block palm-reduced-block">
+		<article class="m-info-block about-block palm-reduced-block reduced-top-block">
 			<div class="container">
 				<header>
 					<h2>About The Business of Web Design</h2>
@@ -78,8 +142,8 @@
 				</div>
 				<div class="l-grid-row">
 					<ul class="m-inline-list social-list tablet">
-						<li class="archer-italic social-item l-grid-8 t-grid-4 l-clear-1"><a href="#"><em><span class="ir">Twitter</span><span class="icon-twitter"></span><span>Follow us on Twitter</span></a></em></li>
-						<li class="archer-italic social-item l-grid-8 t-grid-4"><a href="#"><em><span class="ir">Lanyrd</span><span class="icon-lanyrd"></span><span>Attend on Lanyrd</span></a></em></li>
+						<li class="primary archer-italic social-item l-grid-8 t-grid-4 l-clear-1"><a href="#"><em><span class="ir">Twitter</span><span class="icon-twitter"></span><span><strong>Follow us on Twitter</strong></span></a></em></li>
+						<li class="primary archer-italic social-item l-grid-8 t-grid-4"><a href="#"><em><span class="ir">Lanyrd</span><span class="icon-lanyrd"></span><span><strong>Attend on Lanyrd</strong></span></a></em></li>
 					</ul>
 				</div>
 			</div>

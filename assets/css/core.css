@@ -683,7 +683,7 @@ tfoot th:first-child {
 .archer-italic {
   font-family: 'Archer SSm A', 'Archer SSm B';
   font-weight: 500;
-  font-style: normal; }
+  font-style: italic; }
 
 /* =============================================================================
    Site Header, Footer & Body
@@ -772,13 +772,15 @@ tfoot th:first-child {
     .site-foot h3 span {
       display: block;
       font-weight: 400; }
-  .site-foot .footer-list .list-item a {
-    font-size: 0.75em;
-    text-transform: uppercase;
-    font-weight: 400; }
-  .site-foot .footer-list .list-item:first-child a {
-    padding-left: 0;
-    border-left: 0; }
+  .site-foot .footer-list {
+    margin-bottom: 0; }
+    .site-foot .footer-list .list-item a {
+      font-size: 0.75em;
+      text-transform: uppercase;
+      font-weight: 400; }
+    .site-foot .footer-list .list-item:first-child a {
+      padding-left: 0;
+      border-left: 0; }
 
 @media screen and (min-width: 680px) {
   .site-foot .footer-list {
@@ -811,11 +813,119 @@ tfoot th:first-child {
   .blog-entry + .blog-entry {
     margin-top: 0; } }
 .tile-item {
-  margin-top: 4% !important; }
+  margin-top: 4%;
+  border-top: 2px solid #c6c4be; }
+  .tile-item:first-child {
+    border-top: 0; }
+  .tile-item .speaker-overlay h3 {
+    margin-top: 0; }
+  .tile-item .speaker-overlay > p {
+    font-family: 'Archer SSm A', 'Archer SSm B';
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 3%; }
+  .tile-item .speaker-overlay span p {
+    margin-bottom: 5px; }
 
-@media screen and (min-width: 800px) {
+.sponsor .tile-item {
+  border-top: 0;
+  margin-top: 11px; }
+
+.speaker-list + .speaker-list .tile-item:first-child {
+  border-top: 2px solid #c6c4be; }
+
+@media screen and (max-width: 540px) {
   .tile-item {
-    margin-top: 0% !important; } }
+    *zoom: 1; }
+    .tile-item:before, .tile-item:after {
+      content: "";
+      display: table; }
+    .tile-item:after {
+      clear: both; } }
+@media screen and (min-width: 540px) {
+  .tile-item {
+    border-top: 0;
+    margin-top: 11px !important; }
+    .tile-item a {
+      position: relative;
+      display: block; }
+      .tile-item a:hover .orange-filter {
+        display: none; }
+      .tile-item a:hover .speaker-overlay {
+        display: block;
+        background: rgba(22, 45, 57, 0.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 8px;
+        padding: 11px;
+        text-align: center;
+        color: #fff; }
+        .tile-item a:hover .speaker-overlay h3 {
+          font-size: 0.75rem;
+          margin: 9% 0 4%; }
+        .tile-item a:hover .speaker-overlay p {
+          font-size: 0.75rem; }
+        .tile-item a:hover .speaker-overlay span {
+          display: none; } }
+@media screen and (min-width: 680px) {
+  .tile-item a {
+    position: relative;
+    display: block; }
+    .tile-item a:hover .orange-filter {
+      display: none; }
+    .tile-item a:hover .speaker-overlay {
+      display: block;
+      background: rgba(22, 45, 57, 0.5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 8px;
+      padding: 11px;
+      text-align: center;
+      color: #fff; }
+      .tile-item a:hover .speaker-overlay h3 {
+        font-size: 1rem;
+        margin: 12% 0 4%; }
+      .tile-item a:hover .speaker-overlay > p {
+        font-family: 'Archer SSm A', 'Archer SSm B';
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 3%; }
+      .tile-item a:hover .speaker-overlay span {
+        display: block; }
+        .tile-item a:hover .speaker-overlay span p {
+          font-size: 0.75rem; } }
+@media screen and (min-width: 900px) {
+  .tile-item a:hover .speaker-overlay h3 {
+    font-size: 1rem; }
+  .tile-item a:hover .speaker-overlay > p {
+    font-size: 1rem; } }
+@media screen and (min-width: 1000px) {
+  .tile-item {
+    margin-top: 2% !important; }
+    .tile-item a:hover .speaker-overlay {
+      padding: 21px;
+      text-align: center;
+      color: #fff; }
+      .tile-item a:hover .speaker-overlay h3 {
+        margin: 18% 0 4%;
+        font-size: 1.125rem; }
+      .tile-item a:hover .speaker-overlay > p {
+        font-family: 'Archer SSm A', 'Archer SSm B';
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 10%;
+        font-size: 1.125rem; }
+      .tile-item a:hover .speaker-overlay span p {
+        font-size: 0.875rem; }
+
+  .sponsor .tile-item {
+    margin-top: 0 !important; } }
 @media screen and (min-width: 540px) and (max-width: 800px) {
   .tier-1 .tile-item:nth-child(5n) {
     margin-left: 25.9%; }
@@ -852,13 +962,6 @@ tfoot th:first-child {
   .sponsor:first-child {
     margin-bottom: 0; }
 
-@media screen and (min-width: 680px) {
-  .speaker-list,
-  .sponsor {
-    margin-bottom: 2%; }
-    .speaker-list:first-child,
-    .sponsor:first-child {
-      margin-bottom: 2%; } }
 .social-list {
   margin-top: 21px; }
 
@@ -874,6 +977,18 @@ tfoot th:first-child {
   .about-block h2 {
     margin-bottom: 0;
     border-bottom: 0; } }
+.speaker-overlay {
+  display: none; }
+
+@media screen and (min-width: 540px) {
+  .orange-filter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 169, 77, 0.4);
+    border-radius: 8px; } }
 /* =============================================================================
    Layout CSS - Grids widths, column gutters & wrappers
    ========================================================================== */
@@ -1005,6 +1120,12 @@ tfoot th:first-child {
 
   .p-grid-3 {
     width: 73.20513%; }
+
+  .p-grid-two-third {
+    display: inline;
+    float: left;
+    margin: 0 0.89744%;
+    width: 64.87179%; }
 
   .p-grid-4 {
     width: 98.20513%; }
@@ -1487,6 +1608,8 @@ tfoot th:first-child {
     padding: 105px 0 150px; }
     .m-info-block.extended-block {
       padding: 150px 0; }
+    .m-info-block.reduced-top-block {
+      padding: 60px 0 125px; }
     .m-info-block.venue-block {
       position: relative; }
       .m-info-block.venue-block .venue-block-text {
