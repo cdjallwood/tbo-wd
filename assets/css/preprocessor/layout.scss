@@ -255,7 +255,7 @@
 	@extend .cf;
 	position: relative;
 	width: 92%;
-	max-width: $gridsystem-width;
+	max-width: #{$gridsystem-width}px;
 	margin: 0 auto;
 }
 

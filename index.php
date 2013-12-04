@@ -53,7 +53,7 @@
 							</a>
 						</li>
 					</ul>
-					<a href="#" class="l-grid-16 l-clear-1 m-btn btn-secondary centered">View full talk descriptions and event schedule</a>
+					<a href="#" class="l-grid-16 l-clear-1 m-btn btn-big btn-secondary centered">View full talk descriptions and event schedule</a>
 				</div>
 			</div>
 		</article>

@@ -112,10 +112,34 @@
 	}
 }
 
-@media screen and (min-width: $desk){
+@media screen and (min-width: $desktop){
 	.m-info-block{
 		&.venue-block{
-			width: 25.98291%;
+			.venue-block-text{
+				top: 13%;
+				width: 25.98291%;
+			}
 		}
 	}
 }
+
+@media screen and (min-width: 960px){
+	.m-info-block{
+		&.venue-block{
+			.venue-block-text{
+				top: 20%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.m-info-block{
+		&.venue-block{
+			.venue-block-text{
+				top: 30%;
+			}
+		}
+	}
+}
+

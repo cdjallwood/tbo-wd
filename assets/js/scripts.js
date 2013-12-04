@@ -9,18 +9,12 @@
 
 $(document).ready(function(){
 
-  	// Off-viewport navigation - Link and functionality.
-	var $menu = $('#menu'),
-	    $menulink = $('.menu-link'),
-	    $wrap = $('#wrap');
-	  
-	$menulink.click(function() {
-		event.preventDefault();
-    	$menulink.toggleClass('active');
-	    $wrap.toggleClass('active');
-	    return false;
-	});
+    $(".nav-icon").on("click", function(){
+        $(".header-nav").slideToggle('fast');
+        $(this).toggleClass("active");
+    });
 
+  $(".header-nav").hide();
 
 	// Toggle show/hide content
 

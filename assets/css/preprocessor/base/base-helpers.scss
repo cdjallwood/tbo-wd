@@ -62,6 +62,14 @@
     display: block;
 }
 
+.lap{
+    display: none;
+}
+
+.max-lap{
+    display: block;
+}
+
 @media screen and (min-width: $large-palm){
     .large-palm{
         display: block !important;
@@ -79,8 +87,18 @@
 }
 
 @media screen and (min-width: $lap){
-    .desk{
+    .lap{
         display: block !important;
+    }
+
+    .max-lap{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: $desktop){
+    .desk{
+        display: block;
     }
 
     .max-desk{

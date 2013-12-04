@@ -605,6 +605,12 @@ tfoot th:first-child {
 .max-desk {
   display: block; }
 
+.lap {
+  display: none; }
+
+.max-lap {
+  display: block; }
+
 @media screen and (min-width: 540px) {
   .large-palm {
     display: block !important; } }
@@ -615,8 +621,14 @@ tfoot th:first-child {
   .palm {
     display: none !important; } }
 @media screen and (min-width: 800px) {
-  .desk {
+  .lap {
     display: block !important; }
+
+  .max-lap {
+    display: none !important; } }
+@media screen and (min-width: 900px) {
+  .desk {
+    display: block; }
 
   .max-desk {
     display: none !important; } }
@@ -700,6 +712,25 @@ tfoot th:first-child {
 /* =====================================================================================
    Site Specifics - To match the designs e.g. the top margin on the header search field
    ================================================================================== */
+.nav-icon {
+  float: left; }
+  .nav-icon .icon-menu {
+    color: #fff;
+    display: block;
+    margin-top: -9px; }
+  .nav-icon.active .icon-menu {
+    color: #c1e5e7; }
+
+.header-nav {
+  background: #162d39;
+  padding-top: 21px; }
+  .header-nav .list-item a {
+    color: #fff;
+    padding: 11px 8px;
+    display: block; }
+    .header-nav .list-item a:hover {
+      background: #204052; }
+
 .site-head {
   *zoom: 1;
   position: relative; }
@@ -788,7 +819,7 @@ tfoot th:first-child {
     font-size: 3.5rem; }
     .sign-up-cta h2 span {
       font-size: 3rem;
-      left-spacing: 2px; } }
+      letter-spacing: 2px; } }
 .speaker-list,
 .sponsor {
   margin-bottom: 2%; }
@@ -1261,7 +1292,7 @@ tfoot th:first-child {
 .l-content {
   position: relative;
   width: 92%;
-  max-width: 1170;
+  max-width: 1170px;
   margin: 0 auto; }
 
 /*
@@ -1335,17 +1366,19 @@ tfoot th:first-child {
   .m-inline-list .tile-item img {
     border-radius: 8px; }
 
-@media screen and (min-wwidth: 680px) {
+@media screen and (min-width: 680px) {
   .m-inline-list.sponsor {
     margin-top: 1.9%; }
   .m-inline-list .list-item {
-    display: inline-block; } }
+    display: inline-block;
+    margin: 0; } }
 /*
  * Stacked Styling (from top to bottom)
  */
 .m-stacked-list {
   margin-bottom: 21px; }
   .m-stacked-list .list-item {
+    display: block;
     list-style: none;
     line-height: 180%;
     padding-left: 0; }
@@ -1422,9 +1455,16 @@ tfoot th:first-child {
     padding: 200px 0; }
   .m-info-block.venue-block .venue-block-text {
     width: 37.09402%; } }
-@media screen and (min-width: 1170) {
-  .m-info-block.venue-block {
+@media screen and (min-width: 900px) {
+  .m-info-block.venue-block .venue-block-text {
+    top: 13%;
     width: 25.98291%; } }
+@media screen and (min-width: 960px) {
+  .m-info-block.venue-block .venue-block-text {
+    top: 20%; } }
+@media screen and (min-width: 1000px) {
+  .m-info-block.venue-block .venue-block-text {
+    top: 30%; } }
 /* =============================================================================
    Hero Module - Hero block
    ========================================================================== */
@@ -1493,6 +1533,8 @@ tfoot th:first-child {
     background: #c6c4be; }
     .m-btn.btn-secondary:hover {
       background: #b4b0a4; }
+  .m-btn.btn-big {
+    display: block; }
   .m-btn + .m-btn {
     margin-left: 4%; }
 
@@ -1522,3 +1564,6 @@ tfoot th:first-child {
 
 .icon-twitter:before {
   content: "\e601"; }
+
+.icon-menu:before {
+  content: "\e608"; }

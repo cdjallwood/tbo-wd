@@ -2,6 +2,39 @@
 // Header Specifics
 //
 
+.nav-icon{
+	float: left;
+
+	.icon-menu{
+		color: #fff;
+		display: block;
+		margin-top: -9px;
+	}
+
+	&.active{
+		.icon-menu{
+			color: $light-blue;
+		}
+	}
+}
+
+.header-nav{
+	background: $dark-blue;
+	padding-top: 21px;
+
+	.list-item{
+		a{
+			color: #fff;
+			padding: 11px 8px;
+			display: block;
+
+			&:hover{
+				background: #204052;
+			}
+		}
+	}
+}
+
 .site-head{
 	@include clearfix;
 	position: relative;
@@ -153,7 +186,7 @@
 
 			span{
 				font-size: 3rem;
-				left-spacing: 2px;
+				letter-spacing: 2px;
 			}
 		}
 	}

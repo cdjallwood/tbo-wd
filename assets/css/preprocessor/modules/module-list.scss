@@ -42,7 +42,7 @@
 	}
 }
 
-@media screen and (min-wwidth: $tablet){
+@media screen and (min-width: $tablet){
 	.m-inline-list{
 		&.sponsor{
 			margin-top: 1.9%;
@@ -50,6 +50,7 @@
 
 		.list-item{
 			display: inline-block;
+			margin: 0;
 		}
 	}
 }
@@ -61,6 +62,7 @@
 .m-stacked-list{
 	margin-bottom: 21px;
 	.list-item{
+		display: block;
 		list-style: none;
 		line-height: 180%;
 		padding-left: 0;

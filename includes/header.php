@@ -36,15 +36,28 @@
 
 </head>
 <body>
+	<div class="header-nav max-desk">
+		<div class="container">
+			<ul class="m-stacked-list">
+				<li class="list-item"><a href="#">Conference</a></li>
+				<li class="list-item"><a href="#">Schedule</a></li>
+				<li class="list-item"><a href="#">Blog</a></li>
+			</ul>
+		</div>
+	</div>
 	<header class="site-head m-masthead" role="banner">
 		<section class="container">
 			<nav class="l-left">
-				<ul class="m-inline-list tablet">
+				<ul class="m-inline-list desk">
 					<li class="list-item"><a href="#">Conference</a></li>
 					<li class="list-item"><a href="#">Schedule</a></li>
 					<li class="list-item"><a href="#">Blog</a></li>
 				</ul>
 			</nav>
+			<a href="#" class="nav-icon max-desk">
+				<span class="ir" href="#">MENU</span>
+				<span class="icon-menu"></span>
+			</a>
 			<span class="conf-cta l-right">
 				<p>Cardiff, 18th July 2014 - Early Bird &pound;99 (+ VAT) <span><a class="primary" href="#">Buy Tickets</a></span></p>
 			</span>
