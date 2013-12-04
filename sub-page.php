@@ -9,7 +9,7 @@
 					<h2>Page Heading</h2>
 				</header>
 				<div class="l-grid-row">
-					<div class="l-grid-10 block-centered">
+					<div class="l-grid-10 t-grid-8 block-centered">
 						<p>On the 18th of July 2014 in Cardiff we're running a full day conference to deal with all of these tricky aspects.</p> 
 						<p>We'll have 8 great speakers giving you key business advice & lessons learnt from the front line in the industry.</p>
 						<p>You'll be walking away with fistfuls of tactics to help take your business forward.</p>

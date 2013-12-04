@@ -73,13 +73,14 @@ h1,
 }
 
 h2, .h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.2em;
     margin: 0.5em 0;
 }
 
 @media screen and (min-width: $tablet){
     h2, .h2{
+        font-size: 1.5rem;
     }
 }
 

@@ -140,7 +140,7 @@
 	}
 }
 
-@media screen and (min-width: $tablet){
+@media screen and (min-width: $lap){
 	.blog-entry{
 		+ .blog-entry{
 			margin-top: 0;
@@ -152,10 +152,25 @@
 	margin-top: 4% !important;
 }
 
-@media screen and (min-width: $tablet){
+@media screen and (min-width: $lap){
 	
 	.tile-item{
 		margin-top: 0% !important;
+	}
+}
+
+@media screen and (min-width: $large-palm) and (max-width: $lap){
+	
+	.tier-1{
+		.tile-item:nth-child(5n){
+			margin-left: 25.9%;
+		}
+	}
+
+	.tier-2{
+		.tile-item:first-child{
+			margin-left: 7%;
+		}
 	}
 }
 

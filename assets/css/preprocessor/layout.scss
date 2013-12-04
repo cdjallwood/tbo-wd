@@ -11,7 +11,7 @@
 }
 
 // Palm Grid
-@media screen and (max-width: $palm){
+@media screen and (max-width: $large-palm){
 
 	/* =============================================================================
 	   Column gutters & extended gutters
@@ -68,7 +68,7 @@
 }
 
 // Tablet Grid
-@media screen and (min-width: $palm) and (max-width: $tablet){
+@media screen and (min-width: $large-palm) and (max-width: $lap){
 
 	/* =============================================================================
 	   Column gutters & extended gutters
@@ -102,7 +102,7 @@
 	 */
 
 	.t-grid-1 {
-		@include column(1);
+		@include column(2.25);
 	}
 	.t-grid-2 {
 		@include column(4.5);
@@ -128,7 +128,7 @@
 }
 
 // Desktop Grid
-@media screen and (min-width: $tablet){
+@media screen and (min-width: $lap){
 	/* =============================================================================
 	   Column gutters & extended gutters
 	   ========================================================================== */
@@ -220,7 +220,7 @@
 	}
 
 	.l-clear-2{
-		margin-left: 13.7171888% !important;
+		margin-left: 11.7948718% !important;
 	}
 
 	.l-clear-3{

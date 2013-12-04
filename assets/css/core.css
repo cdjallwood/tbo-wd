@@ -172,10 +172,13 @@ h1,
       font-size: 5rem;
       letter-spacing: 3px; } }
 h2, .h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.2em;
   margin: 0.5em 0; }
 
+@media screen and (min-width: 680px) {
+  h2, .h2 {
+    font-size: 1.5rem; } }
 h3, .h3 {
   font-size: 1rem;
   line-height: 1.2em;
@@ -804,15 +807,21 @@ tfoot th:first-child {
   .blog-entry + .blog-entry {
     margin-top: 21px; }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   .blog-entry + .blog-entry {
     margin-top: 0; } }
 .tile-item {
   margin-top: 4% !important; }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   .tile-item {
     margin-top: 0% !important; } }
+@media screen and (min-width: 540px) and (max-width: 800px) {
+  .tier-1 .tile-item:nth-child(5n) {
+    margin-left: 25.9%; }
+
+  .tier-2 .tile-item:first-child {
+    margin-left: 7%; } }
 .sign-up-cta {
   background: url("../img/sign-up-bg-repeat.jpg") repeat; }
   .sign-up-cta .h1 {
@@ -869,7 +878,7 @@ tfoot th:first-child {
    Layout CSS - Grids widths, column gutters & wrappers
    ========================================================================== */
 /* For generic column styling */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 540px) {
   /* =============================================================================
      Column gutters & extended gutters
      ========================================================================== */
@@ -1002,7 +1011,7 @@ tfoot th:first-child {
 
   .p-clear-1 {
     margin-left: 06.8585944% !important; } }
-@media screen and (min-width: 400px) and (max-width: 680px) {
+@media screen and (min-width: 540px) and (max-width: 800px) {
   /* =============================================================================
      Column gutters & extended gutters
      ========================================================================== */
@@ -1116,7 +1125,7 @@ tfoot th:first-child {
    * When '-alt' is used it's for when a column has expanded gutters
    */
   .t-grid-1 {
-    width: 3.76068%; }
+    width: 10.70513%; }
 
   .t-grid-2 {
     width: 23.20513%; }
@@ -1138,7 +1147,7 @@ tfoot th:first-child {
 
   .t-clear-1 {
     margin-left: 06.8585944% !important; } }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   /* =============================================================================
      Column gutters & extended gutters
      ========================================================================== */
@@ -1309,7 +1318,7 @@ tfoot th:first-child {
     margin-left: 06.8585944% !important; }
 
   .l-clear-2 {
-    margin-left: 13.7171888% !important; }
+    margin-left: 11.7948718% !important; }
 
   .l-clear-3 {
     margin-left: 20.5757832% !important; }
@@ -1503,7 +1512,7 @@ tfoot th:first-child {
 @media screen and (min-width: 960px) {
   .m-info-block.venue-block .venue-block-text {
     top: 20%; } }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1150px) {
   .m-info-block.venue-block .venue-block-text {
     top: 30%; } }
 /* =============================================================================
@@ -1525,30 +1534,40 @@ tfoot th:first-child {
     color: #fff; }
   .m-hero .m-btn {
     margin-top: 21px; }
+  .m-hero.sub-hero {
+    height: 200px;
+    overflow: hidden; }
+    .m-hero.sub-hero .h2 {
+      margin-top: 21px;
+      font-size: 1.5rem;
+      line-height: 1em; }
+      .m-hero.sub-hero .h2 span {
+        font-size: 1.25rem;
+        letter-spacing: 2px; }
 
 @media screen and (min-width: 680px) {
   .m-hero > div {
-    top: 10%; } }
+    top: 10%; }
+  .m-hero.sub-hero {
+    height: 350px;
+    overflow: hidden; }
+    .m-hero.sub-hero img {
+      position: relative;
+      top: 0px; }
+    .m-hero.sub-hero .h2 {
+      font-size: 3.5rem;
+      line-height: 1em; }
+      .m-hero.sub-hero .h2 span {
+        font-size: 3.25rem;
+        letter-spacing: 2px; }
+    .m-hero.sub-hero > div {
+      top: 20%; } }
 @media screen and (min-width: 800px) {
   .m-hero > div {
     top: 14.5%; }
   .m-hero p {
     font-size: 1.25rem;
-    line-height: 1.25em; }
-  .m-hero.sub-hero {
-    height: 400px;
-    overflow: hidden; }
-    .m-hero.sub-hero img {
-      position: relative;
-      top: -160px; }
-    .m-hero.sub-hero .h2 {
-      font-size: 4.25rem;
-      line-height: 1em; }
-      .m-hero.sub-hero .h2 span {
-        font-size: 3.75rem;
-        letter-spacing: 2px; }
-    .m-hero.sub-hero > div {
-      top: 20%; } }
+    line-height: 1.25em; } }
 @media screen and (min-width: 1000px) {
   .m-hero > div {
     top: 19%; } }
