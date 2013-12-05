@@ -1,0 +1,50 @@
+/* =============================================================================
+   Schedule Module - Schedule listing
+   ========================================================================== */
+
+.m-schedule{
+	.schedule-item{
+		@include clearfix;
+		text-align: center;
+
+		.schedule-details-container{
+		}
+
+		.js-slidetoggle{
+			@include subheading;
+			color: $orange;
+		}
+
+		img{
+			border-radius: 8px;
+		}
+		
+		.active + .schedule-details-container{
+			@include clearfix;
+			display: block;
+			margin: 21px auto 0;
+			float: none;
+			text-align: left;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.m-schedule{
+		
+		.active + .schedule-details-container{
+			@include clearfix;
+
+			> div{
+				width: 48.79402%;
+				margin-left: 02.3622047%;
+				float: left;
+	
+				&:first-child{
+					margin-left: 0;
+				}
+			}
+		}
+
+	}
+}
