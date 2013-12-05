@@ -67,7 +67,7 @@
 						<li class="tile-item l-grid-4 t-grid-2 l-clear-1">
 							<a href="#">
 								<span class="p-grid-third">
-									<img src="assets/content/sample-speaker.jpg" alt="">
+									<img src="assets/img/generic-speaker-icon.jpg" alt="">
 								</span>
 								<div class="orange-filter"></div>
 								<div class="speaker-overlay p-grid-two-third">
@@ -196,69 +196,69 @@ is the..</p>
 					<ul class="m-inline-list sponsor tier-1">
 						<li class="tile-item l-grid-3 p-grid-2 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-3 p-grid-2 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-3 p-grid-2 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-3 p-grid-2 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-3 p-grid-2 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-3 p-grid-2 t-grid-2">
 							<a href="#">
-								<img src="assets/content/sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail.jpg" alt="">
 							</a>
 						</li>
 					</ul>
 					<ul class="m-inline-list sponsor tier-2">
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1 l-clear-2">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 						<li class="tile-item l-grid-2 p-grid-third t-grid-1">
 							<a href="#">
-								<img src="assets/content/small-sponsor-sample.jpg" alt="">
+								<img src="assets/img/sponsor-thumbnail-small.jpg" alt="">
 							</a>
 						</li>
 					</ul>

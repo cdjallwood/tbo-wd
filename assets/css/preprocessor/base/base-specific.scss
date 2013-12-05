@@ -79,7 +79,7 @@
 
 	.footer-list{
 		margin-bottom: 0;
-		
+
 		.list-item{
 			a {
 				font-size: 0.75em;
@@ -233,6 +233,11 @@
 			}
 		}
 	}
+
+	.speaker-list + .speaker-list .tile-item:first-child{
+		border-top: 0;
+	}
+
 }
 
 @media screen and (min-width: $tablet){

@@ -869,7 +869,10 @@ tfoot th:first-child {
         .tile-item a:hover .speaker-overlay p {
           font-size: 0.75rem; }
         .tile-item a:hover .speaker-overlay span {
-          display: none; } }
+          display: none; }
+
+  .speaker-list + .speaker-list .tile-item:first-child {
+    border-top: 0; } }
 @media screen and (min-width: 680px) {
   .tile-item a {
     position: relative;
