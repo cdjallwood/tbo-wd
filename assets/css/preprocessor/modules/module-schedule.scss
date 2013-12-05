@@ -6,8 +6,11 @@
 	.schedule-item{
 		@include clearfix;
 		text-align: center;
+		margin-bottom: 11px;
+		position: relative;
 
-		.schedule-details-container{
+		> .schedule-avatar{
+			margin-top: 3px !important;
 		}
 
 		.js-slidetoggle{
@@ -18,13 +21,49 @@
 		img{
 			border-radius: 8px;
 		}
+
+		h2 {
+			margin: 0.75em 0;
+			clear: both;
+
+			+ p{
+				font-size: 1.25rem;
+				margin: 0 0 0.45em;
+			}
+		}
 		
 		.active + .schedule-details-container{
 			@include clearfix;
 			display: block;
-			margin: 21px auto 0;
+			margin: 15px auto 0;
 			float: none;
 			text-align: left;
+		}
+
+		&:before{
+			content: "";
+			width: 5px;
+			height: 170px;
+			background: $greyscale-mid;
+			display: block !important;
+			margin-left: 49.6%;
+		}
+
+		&:after{
+			content:"";
+			// width: 0; 
+			// height: 0; 
+			// border-left: 18px solid transparent;
+			// border-right: 18px solid transparent;
+			// border-top: 20px solid $dark-blue;
+			position: absolute;
+			// left: 48.25%;
+			left: 47%;
+			top: 155px;
+			width: 20px;
+			height: 20px;
+			background: $dark-blue;
+			border-radius: 100%;
 		}
 	}
 }
@@ -32,6 +71,12 @@
 @media screen and (min-width: $tablet){
 	.m-schedule{
 		
+		.schedule-item{
+			&:after{
+				left: 48.9%;
+			}
+		}
+
 		.active + .schedule-details-container{
 			@include clearfix;
 

@@ -5,17 +5,22 @@
 
 		<article class="m-info-block">
 			<div class="container">
-				<header class="l-grid-10 block-centered">
+				<header class="l-grid-8 block-centered">
 					<h2>Conference Schedule</h2>
 					<p class="archer-italic">At the heart of The Business of Web Design is the venue, taking place in a The Atrium, Cardiff.</p>
 				</header>
 				<div class="l-grid-row">
 					<ul class="m-inline-list m-schedule">
 						<li class="schedule-item">
-							<h2>8.00am</h2>
-							<img src="assets/content/sample-speaker.jpg" alt="">
-							<h2>James Young</h2>
-							<p class="archer-italic">Contracts for the Faint Hearted</p>
+							<div class="schedule-avatar l-grid-4 block-centered">
+								<h2>8.00am</h2>
+								<span class="image-wrapper">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+									<div class="orange-filter"></div>
+								</span>
+								<h2>James Young</h2>
+								<p class="archer-italic">Contracts for the Faint Hearted</p>
+							</div>
 							<a class="js-slidetoggle" href="#">Read More</a>
 							<div class="js-slidetoggle-container schedule-details-container l-grid-14">
 								<div class="">
@@ -31,10 +36,15 @@
 						</li>
 
 						<li class="schedule-item">
-							<h2>8.00am</h2>
-							<img src="assets/content/sample-speaker.jpg" alt="">
-							<h2>James Young</h2>
-							<p class="archer-italic">Contracts for the Faint Hearted</p>
+							<div class="schedule-avatar l-grid-4 block-centered">
+								<h2>8.00am</h2>
+								<span class="image-wrapper">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+									<div class="orange-filter"></div>
+								</span>
+								<h2>James Young</h2>
+								<p class="archer-italic">Freelancing: The good, the bad and the ugly.</p>
+							</div>
 							<a class="js-slidetoggle" href="#">Read More</a>
 							<div class="js-slidetoggle-container schedule-details-container l-grid-14">
 								<div class="">
@@ -50,9 +60,35 @@
 						</li>
 
 						<li class="schedule-item">
-							<h2>8.00am</h2>
-							<h3>James Young</h3>
-							<p class="archer-italic">Sammiches</p>
+							<div class="schedule-avatar l-grid-6 block-centered">
+								<h2>12.00am - 1.00pm</h2>
+								<h3>Lunch Break</h3>
+								<p class="archer-italic">Adjourn for 1 hour while we have lunch. Lunch will be provided and will be a range of sandwiches, fruit, drinks and pastries.</p>
+							</div>
+						</li>
+
+						<li class="schedule-item">
+							<div class="schedule-avatar l-grid-4 block-centered">
+								<h2>8.00am</h2>
+								<span class="image-wrapper">
+									<img src="assets/content/sample-speaker.jpg" alt="">
+									<div class="orange-filter"></div>
+								</span>
+								<h2>James Young</h2>
+								<p class="archer-italic">Freelancing: The good, the bad and the ugly.</p>
+							</div>
+							<a class="js-slidetoggle" href="#">Read More</a>
+							<div class="js-slidetoggle-container schedule-details-container l-grid-14">
+								<div class="">
+									<h3>ABOUT WESTLEY</h3>
+									<p>Senior Developer with @thinkbda, blogger, speaker, father and husband. Order of importance not necessarily as stated.</p>
+								</div>
+								<div class="">
+									<h3>CONTRACTS FOR THE FAINT HEARTED</h3>
+									<p>Perhaps you're a freelancer in the web design industry. Or maybe you run your own small dev team.</p>
+									<p>Chances are that you are very clued up with CSS3, RWD etc and very passionate about creating great work for your clients. </p>
+								</div>
+							</div>
 						</li>
 						
 					</ul>
