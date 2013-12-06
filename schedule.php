@@ -12,7 +12,7 @@
 				<div class="l-grid-row">
 					<ul class="m-inline-list m-schedule">
 						<li class="schedule-item">
-							<div class="schedule-avatar l-grid-4 block-centered">
+							<div class="schedule-avatar l-grid-4 t-grid-third block-centered">
 								<h2>8.00am</h2>
 								<span class="image-wrapper">
 									<img src="assets/content/sample-speaker.jpg" alt="">
@@ -36,7 +36,7 @@
 						</li>
 
 						<li class="schedule-item">
-							<div class="schedule-avatar l-grid-4 block-centered">
+							<div class="schedule-avatar l-grid-4 t-grid-third block-centered">
 								<h2>8.00am</h2>
 								<span class="image-wrapper">
 									<img src="assets/content/sample-speaker.jpg" alt="">
@@ -60,7 +60,7 @@
 						</li>
 
 						<li class="schedule-item">
-							<div class="schedule-avatar l-grid-6 block-centered">
+							<div class="schedule-avatar l-grid-6 t-grid-4 block-centered">
 								<h2>12.00am - 1.00pm</h2>
 								<h3>Lunch Break</h3>
 								<p class="archer-italic">Adjourn for 1 hour while we have lunch. Lunch will be provided and will be a range of sandwiches, fruit, drinks and pastries.</p>
@@ -68,7 +68,7 @@
 						</li>
 
 						<li class="schedule-item">
-							<div class="schedule-avatar l-grid-4 block-centered">
+							<div class="schedule-avatar l-grid-4 t-grid-third block-centered">
 								<h2>8.00am</h2>
 								<span class="image-wrapper">
 									<img src="assets/content/sample-speaker.jpg" alt="">
