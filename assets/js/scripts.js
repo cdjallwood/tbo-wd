@@ -14,7 +14,7 @@ $(document).ready(function(){
         $(this).toggleClass("active");
     });
 
-  $(".header-nav").hide();
+    $(".header-nav").hide();
 
 	// Toggle show/hide content
 

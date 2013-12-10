@@ -27,7 +27,7 @@
 	<!-- JS Includes -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript">!window.jQuery && document.write(unescape('%3Cscript type="text/javascript" src="assets/js/libs/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
-	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/scripts-ck.js"></script>
 
 </body>
 </html>

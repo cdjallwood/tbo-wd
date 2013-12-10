@@ -12,15 +12,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- REMOVE ME -->
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-
-	<!-- Project Icons (favicons, iPhone icons etc) -->
-	<link rel="shortcut icon" href="favicon.png" type="image/png" />
-	<link rel="apple-touch-icon" href="57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="114x114.png">
-
 	<!--[if IE]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
