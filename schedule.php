@@ -21,7 +21,7 @@
 								<h2>James Young</h2>
 								<p class="archer-italic">Contracts for the Faint Hearted</p>
 							</div>
-							<a class="js-slidetoggle" href="#">Read More</a>
+							<a class="js-slidetoggle" href="#">Toggle talk info <span class="icon-arrow-down"></span></a>
 							<div class="js-slidetoggle-container schedule-details-container l-grid-14">
 								<div class="">
 									<h3>ABOUT WESTLEY</h3>
@@ -45,7 +45,7 @@
 								<h2>James Young</h2>
 								<p class="archer-italic">Freelancing: The good, the bad and the ugly.</p>
 							</div>
-							<a class="js-slidetoggle" href="#">Read More</a>
+							<a class="js-slidetoggle" href="#">Toggle talk info <span class="icon-arrow-down"></span></a>
 							<div class="js-slidetoggle-container schedule-details-container l-grid-14">
 								<div class="">
 									<h3>ABOUT WESTLEY</h3>
@@ -77,7 +77,7 @@
 								<h2>James Young</h2>
 								<p class="archer-italic">Freelancing: The good, the bad and the ugly.</p>
 							</div>
-							<a class="js-slidetoggle" href="#">Read More</a>
+							<a class="js-slidetoggle" href="#">Toggle talk info <span class="icon-arrow-down"></span></a>
 							<div class="js-slidetoggle-container schedule-details-container l-grid-14">
 								<div class="">
 									<h3>ABOUT WESTLEY</h3>

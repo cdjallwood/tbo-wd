@@ -142,8 +142,9 @@
 				</div>
 				<div class="l-grid-row">
 					<ul class="m-inline-list social-list tablet">
-						<li class="primary archer-italic social-item l-grid-8 t-grid-4 l-clear-1"><a href="#"><em><span class="ir">Twitter</span><span class="icon-twitter"></span><span><strong>Follow us on Twitter</strong></span></a></em></li>
-						<li class="primary archer-italic social-item l-grid-8 t-grid-4"><a href="#"><em><span class="ir">Lanyrd</span><span class="icon-lanyrd"></span><span><strong>Attend on Lanyrd</strong></span></a></em></li>
+						<li class="primary archer-italic social-item l-grid-6 t-grid-4"><a href="#"><em><span class="ir">Twitter</span><span class="icon-twitter"></span><span><strong>Follow us on Twitter</strong></span></a></em></li>
+						<li class="primary archer-italic social-item l-grid-6 t-grid-4"><a href="#"><em><span class="ir">Lanyrd</span><span class="icon-foursquare"></span><span><strong>View our Foursquare list</strong></span></a></em></li>
+						<li class="primary archer-italic social-item l-grid-6 t-grid-4"><a href="#"><em><span class="ir">Lanyrd</span><span class="icon-lanyrd"></span><span><strong>Attend on Lanyrd</strong></span></a></em></li>
 					</ul>
 				</div>
 			</div>

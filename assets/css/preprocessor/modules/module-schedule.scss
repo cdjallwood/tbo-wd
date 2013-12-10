@@ -16,6 +16,19 @@
 		.js-slidetoggle{
 			@include subheading;
 			color: $orange;
+
+			> span{
+				position: relative;
+				top: -2px;
+				font-size: 1.25em;
+				text-decoration: none;
+			}
+
+			&.active{
+				> span:before{
+					content: "\e60c";
+				}
+			}
 		}
 
 		img{
