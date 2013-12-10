@@ -8,6 +8,7 @@
 				<div class="l-right">
 					<ul class="m-inline-list social-list">
 						<li class="list-item social-item"><a href="#"><span class="ir">Lanyrd</span><span class="icon-lanyrd"></span><span class="palm">Attend on Lanyrd</span></a></li>
+						<li class="list-item social-item"><a href="#"><span class="ir">Foursquare</span><span class="icon-foursquare"></span><span class="palm">View our Foursquare list</span></a></li>
 						<li class="list-item social-item"><a href="#"><span class="ir">Twitter</span><span class="icon-twitter"></span><span class="palm">Follow us on Twitter</span></a></li>
 					</ul>
 				</div>
