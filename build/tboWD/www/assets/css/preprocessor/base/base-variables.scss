@@ -1,0 +1,74 @@
+//============================
+// Colours
+//============================
+
+// Blues
+$dark-blue: rgb(22,45,57);
+$light-blue: rgb(193,229,231);
+
+// Misc
+$orange: rgb(255,169,77);
+
+// Greyscale
+$greyscale-dark: rgb(43,46,47);
+$greyscale-mid: rgb(198,196,190);
+$off-white: rgb(246,250,253);
+
+// Font Colours
+$base-font-colour: $dark-blue;
+
+
+//============================
+// Specific Margins / Spacing
+//============================
+$header-row: 32px;
+
+
+//============================
+// Font Families
+//============================
+
+@mixin base-family{
+	font-family: 'Gotham SSm A', 'Gotham SSm B', arial, sans-serif;
+	font-weight: 400; 
+	font-style: normal;
+}
+
+@mixin heading-family{
+	font-family: 'Gotham SSm A', 'Gotham SSm B'; 
+	font-weight: 700; 
+	font-style: normal;
+}
+
+@mixin subheading{
+	font-family: 'Archer SSm A', 'Archer SSm B'; 
+	font-weight: 500; 
+	font-style: normal;
+}
+
+@mixin italic-subheading{
+	font-family: 'Archer SSm A', 'Archer SSm B';
+	font-weight: 500;
+	font-style: italic;
+}
+
+//============================
+// URLS
+//============================
+
+$imgUrl: "../img"; //FILES/DEV
+$iconUrl: "icons";
+$behaviourUrl: "/assets/css/behaviours/";
+
+
+//============================
+// Breakpoints
+//============================
+
+$palm: 400px;
+$large-palm: 540px;
+$tablet: 680px;
+$large-tablet: 740px;
+$lap: 800px;
+$desktop: 900px;
+

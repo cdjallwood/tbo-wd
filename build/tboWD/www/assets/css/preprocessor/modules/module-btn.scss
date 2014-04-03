@@ -1,0 +1,52 @@
+/* =============================================================================
+   Button Module - Buttons
+   ========================================================================== */
+
+.m-btn{
+	@include base-family;
+	text-decoration: none;
+	border-radius: 8px;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.875rem;
+	padding: 16px 16px;
+	
+	&.btn-primary{
+		background: $orange;
+
+		&:hover{
+			background: rgb(249,135,14);
+		}
+	}
+
+	&.slim{
+		padding: 8px 12px;
+	}
+
+	&.btn-secondary{
+		background: $greyscale-mid;
+
+		&:hover{
+			background: rgb(180,176,164);
+		}
+	}
+
+	&.btn-big{
+		display: block;
+	}
+
+	+ .m-btn{
+		margin-left: 4%;
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.m-btn{
+		padding: 16px 20px;
+
+		+ .m-btn{
+			margin-left: 1.5%;
+		}
+	}	
+}

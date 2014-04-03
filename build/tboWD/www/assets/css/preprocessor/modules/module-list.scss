@@ -1,0 +1,70 @@
+/* =============================================================================
+   List Module - Vertical and Horizontal styling
+   ========================================================================== */
+
+/*
+ * Removing the margin and padding of the base styling
+ */
+.m-list {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*
+ * Horizontal Styling (from left to right)
+ */
+.m-inline-list {
+	@include clearfix;
+
+	.list-item {
+		display: block;
+		margin-right: 4px; /* removing the inline-block spacing */
+		margin: 11px 0;
+		padding: 0;
+		position: relative;
+		z-index: 1;
+
+		span{
+			vertical-align: middle;
+		}
+
+		&:first-child{
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+
+	.tile-item{
+		img{
+			border-radius: 8px;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.m-inline-list{
+		&.sponsor{
+			margin-top: 1.9%;
+		}
+
+		.list-item{
+			display: inline-block;
+			margin: 0;
+		}
+	}
+}
+
+/*
+ * Stacked Styling (from top to bottom)
+ */
+
+.m-stacked-list{
+	margin-bottom: 21px;
+	.list-item{
+		display: block;
+		list-style: none;
+		line-height: 180%;
+		padding-left: 0;
+	}
+}

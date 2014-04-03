@@ -1,0 +1,21 @@
+/* =============================================================================
+   Masthead Module - Top header
+   ========================================================================== */
+
+.m-masthead{
+	background: $dark-blue;
+	color: #fff;
+	font-size: 0.875rem;
+
+	.list-item{
+		a{
+			height: 48px;
+			line-height: 48px;
+			display: block;
+			margin: 0 4px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+}
+

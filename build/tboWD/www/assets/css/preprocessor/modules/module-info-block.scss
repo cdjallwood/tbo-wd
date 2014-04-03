@@ -1,0 +1,150 @@
+/* =============================================================================
+   Info Module - Generic Content block
+   ========================================================================== */
+
+.m-info-block{
+	@include clearfix;
+	padding: 45px 0 60px;
+	margin: 0;
+
+	&.collapse-block{
+		padding: 0;
+	}
+
+	&.collapse-block-bottom{
+		padding-bottom: 0;
+	}
+
+	&.extended-block{
+		padding: 80px 0;
+	}
+
+	header{
+		text-align: center;
+		margin-bottom: 21px;
+	}
+
+	footer{
+		text-align: center;
+		a,
+		p {
+			@include subheading;
+			display: block;
+		}
+
+		a{
+			text-decoration: underline;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet){
+	.m-info-block{ 
+		&.venue-block{
+			position: relative;
+			height: 450px;
+			overflow: hidden;
+
+			img{
+				height: 100%;
+				width: auto;
+				max-width: none;
+			}
+
+			.venue-block-text{
+				position: absolute;
+				z-index: 1;
+				left: 20px;
+				right: 20px;
+				top: 50px;
+			}
+		}
+
+		&.palm-reduced-block{
+			padding-bottom: 30px;
+		}
+	}
+}
+
+
+@media screen and (min-width: $tablet){
+	.m-info-block{
+		padding: 105px 0 150px;
+
+		&.extended-block{
+			padding: 150px 0;
+		}
+
+		&.reduced-top-block{
+			padding: 60px 0 125px;
+		}
+
+		&.venue-block{
+			position: relative;
+
+			.venue-block-text{
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				top: 10%;
+				left: 9%;
+				width: 48.20513%;
+			}
+		}
+
+		header {
+			margin-bottom: 42px;
+		}
+
+		footer{
+			margin-top: 21px;
+		}
+	}
+}
+
+
+@media screen and (min-width: $lap){
+	.m-info-block{
+		&.extended-block{
+			padding: 200px 0;
+		}
+
+		&.venue-block{
+			.venue-block-text{
+				width: 37.09402%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop){
+	.m-info-block{
+		&.venue-block{
+			.venue-block-text{
+				top: 13%;
+				width: 25.98291%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 960px){
+	.m-info-block{
+		&.venue-block{
+			.venue-block-text{
+				top: 20%;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1150px){
+	.m-info-block{
+		&.venue-block{
+			.venue-block-text{
+				top: 30%;
+			}
+		}
+	}
+}
+

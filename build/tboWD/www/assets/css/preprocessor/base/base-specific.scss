@@ -1,0 +1,492 @@
+//
+// Header Specifics
+//
+
+.nav-icon{
+	float: left;
+
+	.icon-menu{
+		color: #fff;
+		display: block;
+		margin-top: -9px;
+	}
+
+	&.active,
+	&:hover{
+		.icon-menu{
+			color: $orange;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet){
+	.nav-icon{
+		.icon-menu{
+			margin-top: -11px;
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.header-nav{
+	background: $dark-blue;
+	padding-top: 21px;
+
+	.list-item{
+		a{
+			color: #fff;
+			padding: 11px 8px;
+			display: block;
+			font-size: 0.85rem;
+			text-transform: uppercase;
+
+			&:hover{
+				background: #204052;
+			}
+		}
+	}
+}
+
+.buy-now{
+	margin-left: 11px;
+}
+
+.site-head{
+	@include clearfix;
+	position: relative;
+
+	.m-inline-list{
+		margin: 0;
+	}
+
+	.list-item{
+		font-size: 0.75rem;
+	}
+
+	.conf-cta{
+		font-size: 0.75rem;
+		text-transform: uppercase;
+
+		a{
+			@include base-family;
+			text-decoration: none;
+		}
+	}
+}
+
+//
+// Body Specifics
+//
+
+.site-body{
+	position: relative;
+	z-index: 0;
+}
+
+//
+// Footer specifics
+//
+
+.site-foot{
+	background: #fff;
+	color: $greyscale-dark;
+	padding: 50px 0 40px;
+
+	h3{
+		font-size: 1rem;
+		span{
+			display: block;
+			font-weight: 400;
+		}
+	}
+
+	.footer-list{
+		margin-bottom: 0;
+
+		.list-item{
+			a {
+				font-size: 0.75em;
+				text-transform: uppercase;
+				font-weight: 400;
+			}
+
+			&:first-child{
+				a{
+					padding-left: 0;
+					border-left: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.site-foot{
+		.footer-list{
+			margin-top: 42px;
+			.list-item a{
+				padding: 0 1em 0 1.5em;
+				border-left: 1px solid $dark-blue;
+			}
+		}
+	}
+}
+
+//
+// Block specifics
+//
+
+.blog-block{
+	background: url("#{$imgUrl}/blog-bg-repeat.jpg") repeat;
+}
+
+.blog-entry{
+	background: #fff;
+	padding: 18px;
+	border-radius: 8px;
+	border-bottom: 2px solid #d0c7c1;
+
+	&:hover{
+		background: rgb(252,251,250);
+	}
+
+	p{
+		font-size: 0.875rem;
+	}
+
+	> a{
+		@include subheading;
+		font-size: 0.875rem;
+		color: $orange;
+	}
+
+	+ .blog-entry{
+		margin-top: 21px;
+	}
+}
+
+@media screen and (min-width: $lap){
+	.blog-entry{
+		+ .blog-entry{
+			margin-top: 0;
+		}
+	}
+}
+
+.tile-item{
+	margin-top: 4%;
+	min-height: 140px;
+	border-top: 2px solid $greyscale-mid;
+
+	&:first-child{
+		border-top: 0;
+		margin-top: 0;
+	}
+
+	.speaker-overlay{
+		
+		h3{
+			margin-top: 0;
+		}
+
+		> p{
+			@include italic-subheading;
+			font-size: 0.875rem;
+			margin-bottom: 3%;
+		}
+
+		span p{
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.sponsor .tile-item{
+	border-top: 0;
+	min-height: 0;
+	margin-top: 11px;
+}
+
+.speaker-list + .speaker-list .tile-item:first-child{
+	border-top: 2px solid $greyscale-mid;
+}
+
+@media screen and (max-width: $large-palm){
+	.tile-item{
+		@include clearfix;
+	}
+}
+
+@media screen and (min-width: $large-palm){
+	.tile-item{
+		min-height: 0;
+		border-top: 0;
+		margin-top: 11px !important;
+		a{
+			position: relative;
+			display: block;
+
+			&:hover{
+				.orange-filter{
+					display: none;
+				}
+
+				.speaker-overlay{
+					display: block;
+					background: rgba(22,45,57,0.5);
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					border-radius: 8px;
+					padding: 11px;
+					text-align: center;
+					color: #fff;
+					
+					h3{	
+						font-size: 0.75rem;
+						margin: 9% 0 4%;
+					}
+
+					p{
+						font-size: 0.75rem;
+					}
+
+					span{
+						display: none;
+					}
+
+				}	
+			}
+		}
+	}
+
+	.speaker-list + .speaker-list .tile-item:first-child{
+		border-top: 0;
+	}
+
+}
+
+@media screen and (min-width: $tablet){
+	.tile-item{
+		a{
+			position: relative;
+			display: block;
+
+			&:hover{
+				.orange-filter{
+					display: none;
+				}
+
+				.speaker-overlay{
+					display: block;
+					background: rgba(22,45,57,0.5);
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					border-radius: 8px;
+					padding: 11px;
+					text-align: center;
+					color: #fff;
+					
+					h3{	
+						font-size: 1rem;
+						margin: 12% 0 4%;
+					}
+
+					> p{
+						@include italic-subheading;
+						margin-bottom: 3%;
+					}
+					span {
+						display: block;
+						p{
+							font-size: 0.75rem;
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop){
+	.tile-item{
+		a:hover{
+			.speaker-overlay{
+				h3{
+					font-size: 1rem
+				}
+
+				> p{
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1000px){
+	
+	.tile-item{
+		margin-top: 2% !important;
+
+		a:hover{
+			.speaker-overlay{
+				padding: 21px;
+				text-align: center;
+				color: #fff;
+				
+				h3{
+					margin: 18% 0 4%;
+					font-size: 1.125rem;
+				}
+
+				> p{
+					@include italic-subheading;
+					margin-bottom: 10%;
+					font-size: 1.125rem;
+				}
+
+				span p{
+					font-size: 0.875rem;
+				}
+			}
+		}
+	}
+
+	.sponsor .tile-item{
+		margin-top: 0 !important;
+	}
+}
+
+@media screen and (min-width: $large-palm) and (max-width: $lap){
+	
+	.tier-1{
+		.tile-item:nth-child(5n){
+			margin-left: 25.9%;
+		}
+	}
+
+	.tier-2{
+		.tile-item:first-child{
+			margin-left: 7%;
+		}
+	}
+}
+
+.sign-up-cta{
+	background: url("#{$imgUrl}/sign-up-bg-repeat.jpg") repeat;
+
+	.h1{
+		color: $dark-blue;
+	}
+
+	h2{
+		font-size: 1.5rem;
+
+		span{
+			display: block;
+			font-size: 1.25rem;
+			letter-spacing: 2px;
+		}
+	}
+
+	p{
+		@include subheading;
+	}
+
+	.m-btn{
+		margin-top: 21px;
+	}
+}
+
+@media screen and (min-width: $tablet){
+	.sign-up-cta{
+		h2{
+			font-size: 3.5rem;
+
+			span{
+				font-size: 3rem;
+				letter-spacing: 2px;
+			}
+		}
+	}
+}
+
+.speaker-list,
+.sponsor {
+	margin-bottom: 4%;
+
+	&:first-child{
+		margin-bottom: 0;
+	}
+}
+
+.social-list{
+	margin-top: 42px;
+
+	.social-item{
+		a:hover{
+			color: $orange;
+		}
+	}
+}
+
+.social-item [class^="icon-"]{
+	margin-right: 11px;
+}
+
+@media screen and (min-width: $tablet){
+	.social-list{
+		margin-top: 21px;
+		.social-item{
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet){
+	.conf-cta{
+		float: right;
+		
+		p{
+			font-size: 0.75rem;
+		}
+	}
+}
+
+
+.conf-cta p{
+	line-height: 24px;
+}
+
+@media screen and (max-width: $tablet){
+	.about-block h2{
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+}
+.speaker-overlay{
+	display: none;
+}
+
+@media screen and (min-width: $large-palm){
+	.orange-filter{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(255,169,77,0.4);
+		border-radius: 8px;
+	}
+}
+
+.image-wrapper{
+	display: block;
+	position: relative;
+}
